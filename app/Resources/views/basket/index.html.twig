@@ -1,0 +1,66 @@
+{% extends 'base.html.twig' %}
+
+{% block pageTitle %} - Reference Basket{% endblock %}
+
+{% block body %}
+    <section class="main_content">
+
+
+     {% set basket_reference = app.session.get('basket') %}
+
+            {{ dump(app.session.get('basket')) }}
+
+        <h3>Add to your Bibliography list</h3>
+
+            {% if basket_reference is null %}
+                <p>
+                    You have no References in your basket
+                </p>
+                <p>
+                    <a href="{{ path('reference_index') }}">Add References to your new Bibliography</a>
+                </p>
+            {% else %}
+        <table>
+            <tr>
+                <th>Id</th>
+                <th>Name of Author</th>
+                <th>Year Published</th>
+                <th>Title of Reference</th>
+                <th>City Published</th>
+                <th>Publisher</th>
+                <th>Pages Used</th>
+                <th>Text Summary</th>
+                <th>User</th>
+                <th>Status</th>
+            </tr>
+                    {% for reference in basket_reference %}
+                        <tr>
+                            <td>{{ reference.id }}</td>
+                            <td>{{ reference.nameOfAuthor }}</td>
+                            <td>{{ reference.yearPublished }}</td>
+                            <td>{{ reference.titleOfReference }}</td>
+                            <td>{{ reference.cityPublished }}</td>
+                            <td>{{ reference.publisher }}</td>
+                            <td>{{ reference.pagesUsed }}</td>
+                            <td>{{ reference.textSummary }}</td>
+                            <td>{{ reference.userId }}</td>
+                            <td>{{ reference.status }}</td>
+                         </tr>
+                    {% endfor %}
+            <tr>
+                <td colspan="10">
+            <a href="{{ path('bibliography_new') }}">Create Bibliography and add these references</a>
+                </td>
+            <tr>
+        </table>
+                </ul>
+            {% endif %}
+
+    {% if (basket_reference) %}
+            <p>
+                <a href="{{ path('reference_basket_clear') }}">Clear all items in basket</a>
+            </p>
+
+    {% endif %}
+    </section>
+{% endblock %}

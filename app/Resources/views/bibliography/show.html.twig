@@ -1,0 +1,46 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+<section class="main_content">
+    <h2>Bibliography</h2>
+
+    <table>
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ bibliography.id }}</td>
+            </tr>
+            <tr>
+                <th>Bibliography Name</th>
+                <td>{{ bibliography.bibliographyName }}</td>
+            </tr>
+            <tr>
+                <th>Text Summary</th>
+                <td>{{ bibliography.textSummary }}</td>
+            </tr>
+            <tr>
+                <th>Status</th>
+                <td>{{ bibliography.status }}</td>
+            </tr>
+            <tr>
+                <th>User</th>
+                <td>{{ bibliography.userId }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <ul>
+        <li>
+            <a href="{{ path('bibliography_index') }}">Back to the list</a>
+        </li>
+        <li>
+            <a href="{{ path('bibliography_edit', { 'id': bibliography.id }) }}">Edit</a>
+        </li>
+        <li>
+            {{ form_start(delete_form) }}
+                <input type="submit" value="Delete">
+            {{ form_end(delete_form) }}
+        </li>
+    </ul>
+</section>
+{% endblock %}

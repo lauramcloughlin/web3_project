@@ -1,0 +1,68 @@
+/* main content css */
+
+main {
+    	display: flex;  
+    	margin:  0;
+    	padding: 0;
+}
+
+section {
+    	flex: 1;
+    	margin: 0;
+    	padding: 0;  
+}
+section.main_content {
+    	flex: 5;
+    	margin-left: 1rem;
+    	padding-left: 1rem; 
+    	text-align: justify;
+}
+main span{
+   	font-weight: bold;
+}
+/* side navigation with link layout - vertical layout */
+
+section.side_nav{
+   	background-color: #c7cccc;
+}
+
+.side_nav a {
+    	display: block;
+    	color: #373838;
+    	font-weight: bold;
+    	font-size: 1.2rem;
+    	text-decoration: none;
+    	padding: .5rem;
+}
+
+.side_nav ul {
+    	margin: 0;
+    	padding: 0;
+}
+
+.side_nav li {
+    	list-style-type: none;
+    	color: #373838;
+	margin: 0;
+	padding: 0;
+}
+
+.side_nav a:hover {
+	background-color: #010f26;
+	color: white;
+}
+
+/* current page */
+
+.side_nav ul li a.current_sub_page {
+   	background-color: #010f26;
+	color: white;
+}
+
+
+/* form layout */
+
+.form_layout p{
+     	margin: 0rem;
+    	padding: 0.2rem;  	
+}

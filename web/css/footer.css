@@ -1,0 +1,22 @@
+/* footer css */  
+footer {
+    background-color: #010f26;
+    padding: 1rem;
+    color: white;
+}
+
+/* footer links */
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+footer h3{
+    color: white;
+}

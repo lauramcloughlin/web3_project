@@ -1,0 +1,8 @@
+/* website level css  */
+
+/* setting text size and page scroll */
+
+html{
+    font-size: 12px;
+    overflow-y: scroll;
+}

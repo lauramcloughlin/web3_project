@@ -1,0 +1,21 @@
+/* header css */ 
+
+/* header layout */
+
+header {
+    	background-color: #010f26;
+	    padding: 1rem;
+    	color: white;
+}
+
+/* header links */
+
+header a {
+    	color: white;
+    	text-decoration: none;
+}
+
+header a:hover {
+    	color: white;
+    	text-decoration: none;
+}    

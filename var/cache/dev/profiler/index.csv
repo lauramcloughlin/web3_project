@@ -1,0 +1,14 @@
+ddf214,127.0.0.1,GET,http://localhost:8000/bibliography/,1493638709,,200
+7daeea,127.0.0.1,GET,http://localhost:8000/reference/,1493638716,,200
+8c8bc7,127.0.0.1,GET,http://localhost:8000/basket/,1493638719,,200
+914ebc,127.0.0.1,GET,http://localhost:8000/reference/,1493638723,,200
+fb8c8b,127.0.0.1,GET,http://localhost:8000/basket/,1493638725,,200
+717658,127.0.0.1,GET,http://localhost:8000/basket/clear,1493638728,,302
+dfd136,127.0.0.1,GET,http://localhost:8000/basket/,1493638728,,200
+a7d5ff,127.0.0.1,GET,http://localhost:8000/reference/,1493638731,,200
+89873a,127.0.0.1,GET,http://localhost:8000/reference/new,1493638737,,200
+cba05f,127.0.0.1,GET,http://localhost:8000/reference/,1493639671,,200
+15ff58,127.0.0.1,GET,http://localhost:8000/reference/1,1493639689,,200
+baa62d,127.0.0.1,GET,http://localhost:8000/reference/1/edit,1493639743,,200
+81c7ce,127.0.0.1,GET,http://localhost:8000/reference/,1493639952,,200
+de2bd8,127.0.0.1,GET,http://localhost:8000/tag/,1493639957,,200

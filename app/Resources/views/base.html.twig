@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Bibliography Manager {% block pageTitle %}{% endblock %}</title>
+
+        {% block stylesheets %}
+            <link rel="stylesheet" href="{{ asset('css/root.css') }}" />
+            <link rel="stylesheet" href="{{ asset('css/basic.css') }}" />
+            <link rel="stylesheet" href="{{ asset('css/header.css') }}" />
+            <link rel="stylesheet" href="{{ asset('css/footer.css') }}" />
+            <link rel="stylesheet" href="{{ asset('css/layout.css') }}" />
+        {% endblock %}
+
+        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+
+    </head>
+    <body>
+    <header>
+        <section class="header">
+           <h1>Bibliography Manager</h1>
+        </section>
+    </header>
+    <main>
+
+        <section class="side_nav">
+            <ul>
+                <li><h3><a href="{{ path('reference_index') }}">References</a></h3></li>
+                <li><h3><a href="{{ path('bibliography_index') }}">Bibliography</a></h3></li>
+                <li><h3><a href="{{ path('tag_index') }}">Tag</a></h3></li>
+                <li><h3><a href="{{ path('reference_basket_index') }}">New Bib References</a></h3></li>
+            </ul>
+         </section>
+
+        {% block body %}{% endblock %}
+
+    </main>
+
+
+        {% block javascripts %}{% endblock %}
+
+    <footer>
+        <section>
+            <h3>Laura McLoughlin - B00092153</h3>
+        </section>
+   </footer>
+    </body>
+</html>

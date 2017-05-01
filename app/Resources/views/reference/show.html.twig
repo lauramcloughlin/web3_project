@@ -1,0 +1,74 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+<section class="main_content">
+    <h2>Reference</h2>
+
+    <table>
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ reference.id }}</td>
+            </tr>
+            <tr>
+                <th>Name of Author</th>
+                <td>{{ reference.nameOfAuthor }}</td>
+            </tr>
+            <tr>
+                <th>Year Published</th>
+                <td>{{ reference.yearPublished }}</td>
+            </tr>
+            <tr>
+                <th>Title of Reference</th>
+                <td>{{ reference.titleOfReference }}</td>
+            </tr>
+            <tr>
+                <th>City Published</th>
+                <td>{{ reference.cityPublished }}</td>
+            </tr>
+            <tr>
+                <th>Publisher</th>
+                <td>{{ reference.publisher }}</td>
+            </tr>
+            <tr>
+                <th>Pages Used</th>
+                <td>{{ reference.pagesUsed }}</td>
+            </tr>
+            <tr>
+                <th>Text Summary</th>
+                <td>{{ reference.textSummary }}</td>
+            </tr>
+            <tr>
+                <th>User</th>
+                <td>{{ reference.userId }}</td>
+            </tr>
+            <tr>
+                <th>Status</th>
+                <td>{{ reference.status }}</td>
+            </tr>
+            <tr>
+                <th>Date Created</th>
+                <td>{{ reference.dateCreated|date('Y-m-d') }}</td>
+            </tr>
+            <tr>
+                <th>Date Last Edited</th>
+                <td> {{ reference.dateLastEdited|date('Y-m-d') }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <ul>
+        <li>
+            <a href="{{ path('reference_index') }}">Back to the list</a>
+        </li>
+        <li>
+            <a href="{{ path('reference_edit', { 'id': reference.id }) }}">Edit</a>
+        </li>
+        <li>
+            {{ form_start(delete_form) }}
+                <input type="submit" value="Delete">
+            {{ form_end(delete_form) }}
+        </li>
+    </ul>
+</section>
+{% endblock %}
