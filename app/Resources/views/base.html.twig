@@ -33,10 +33,16 @@
 
         <section class="side_nav">
             <ul>
-                <li><h3><a href="{{ path('reference_index') }}">References</a></h3></li>
-                <li><h3><a href="{{ path('bibliography_index') }}">Bibliography</a></h3></li>
-                <li><h3><a href="{{ path('tag_index') }}">Tag</a></h3></li>
+                <li><h3><a href="{{ path('reference_index') }}">Public References</a></h3></li>
+                <li><h3><a href="{{ path('bibliography_index') }}">Lecturer Bibliographies</a></h3></li>
+                <li><h3><a href="{{ path('tag_index') }}">Public Tags</a></h3></li>
+                <li><h3><a href="{{ path('tag_proposed') }}">Proposed Tags</a></h3></li>
                 <li><h3><a href="{{ path('reference_basket_index') }}">New Bib References</a></h3></li>
+                {% if is_granted('ROLE_USER') %}
+                    <li><h3><a href="{{ path('reference_user') }}">My References</a></h3></li>
+                    <li><h3><a href="{{ path('bibliography_user') }}">My Bibliography</a></h3></li>
+                    <li><h3><a href="{{ path('tag_user') }}">My Tag</a></h3></li>
+                {% endif %}
                 {% if is_granted('ROLE_ADMIN') %}
                 <li><h3><a href="{{ path('admin_index') }}">Admin</a></h3></li>
                 {% endif %}

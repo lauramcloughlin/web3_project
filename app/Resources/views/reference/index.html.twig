@@ -38,9 +38,17 @@
                         'id': reference.user.id
                     }) }}">{{ reference.user.email }}</a></td>
                 <td>{{ reference.status }}</td>
-                <td>
-                    <a href="{{ path('reference_show', { 'id': reference.id }) }}">view</a>
-                </td>
+
+                {% if (is_granted('ROLE_USER')) %}&nbsp;
+                    <td>
+                        <a href="{{ path('reference_show', { 'id': reference.id }) }}">view</a>
+                    </td>
+                {% else %}
+                    <td>
+                        <a href="{{ path('reference_show2', { 'id': reference.id }) }}">view</a>
+                    </td>
+                {% endif %}
+
                 {% if (is_granted('ROLE_USER')) %}
                 <td>
                     <a href="{{ path('reference_edit', { 'id': reference.id }) }}">edit</a>

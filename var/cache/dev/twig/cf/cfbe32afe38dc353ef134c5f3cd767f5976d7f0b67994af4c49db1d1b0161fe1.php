@@ -21,29 +21,29 @@ class __TwigTemplate_c053f55500c7d56ca992f4fe9279387c29c33947b05b16988baf39baf5b
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_22d8467cc2768b79bf30098020ee4e423ffa51444c16c04ea0edf99cea3df689 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_22d8467cc2768b79bf30098020ee4e423ffa51444c16c04ea0edf99cea3df689->enter($__internal_22d8467cc2768b79bf30098020ee4e423ffa51444c16c04ea0edf99cea3df689_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "reference/index.html.twig"));
+        $__internal_7df30d8a7e5f0ed4859f001fefef5b1f963ed64e3a362c20fdcf5cf118ab723f = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_7df30d8a7e5f0ed4859f001fefef5b1f963ed64e3a362c20fdcf5cf118ab723f->enter($__internal_7df30d8a7e5f0ed4859f001fefef5b1f963ed64e3a362c20fdcf5cf118ab723f_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "reference/index.html.twig"));
 
-        $__internal_388fb4a292488400147913e5b4672fe87a82e15325d95b6184d2075cd3fd8075 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_388fb4a292488400147913e5b4672fe87a82e15325d95b6184d2075cd3fd8075->enter($__internal_388fb4a292488400147913e5b4672fe87a82e15325d95b6184d2075cd3fd8075_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "reference/index.html.twig"));
+        $__internal_576daa9495ef4bd29a98e2f517000dc3d3a112c78aa0a3b6cf703d7a1a3ed272 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_576daa9495ef4bd29a98e2f517000dc3d3a112c78aa0a3b6cf703d7a1a3ed272->enter($__internal_576daa9495ef4bd29a98e2f517000dc3d3a112c78aa0a3b6cf703d7a1a3ed272_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "reference/index.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_22d8467cc2768b79bf30098020ee4e423ffa51444c16c04ea0edf99cea3df689->leave($__internal_22d8467cc2768b79bf30098020ee4e423ffa51444c16c04ea0edf99cea3df689_prof);
+        $__internal_7df30d8a7e5f0ed4859f001fefef5b1f963ed64e3a362c20fdcf5cf118ab723f->leave($__internal_7df30d8a7e5f0ed4859f001fefef5b1f963ed64e3a362c20fdcf5cf118ab723f_prof);
 
         
-        $__internal_388fb4a292488400147913e5b4672fe87a82e15325d95b6184d2075cd3fd8075->leave($__internal_388fb4a292488400147913e5b4672fe87a82e15325d95b6184d2075cd3fd8075_prof);
+        $__internal_576daa9495ef4bd29a98e2f517000dc3d3a112c78aa0a3b6cf703d7a1a3ed272->leave($__internal_576daa9495ef4bd29a98e2f517000dc3d3a112c78aa0a3b6cf703d7a1a3ed272_prof);
 
     }
 
     // line 3
     public function block_body($context, array $blocks = array())
     {
-        $__internal_be13cc6daab24411b067cafa250d9898ebb1038f1e002a23e403a4d9f1801e7e = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_be13cc6daab24411b067cafa250d9898ebb1038f1e002a23e403a4d9f1801e7e->enter($__internal_be13cc6daab24411b067cafa250d9898ebb1038f1e002a23e403a4d9f1801e7e_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_06a924365a00ded8ac04c4fe2a888df67277151fada36ad194563a867a81311d = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_06a924365a00ded8ac04c4fe2a888df67277151fada36ad194563a867a81311d->enter($__internal_06a924365a00ded8ac04c4fe2a888df67277151fada36ad194563a867a81311d_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
-        $__internal_57db4f8308c874aa51f501b08bb46e55e6248f4f63e15d5114047539a76a1f2a = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_57db4f8308c874aa51f501b08bb46e55e6248f4f63e15d5114047539a76a1f2a->enter($__internal_57db4f8308c874aa51f501b08bb46e55e6248f4f63e15d5114047539a76a1f2a_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_db0bd593716cfc722bd8e5bc220195890632446719c3b821c7e27d05e562f89c = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_db0bd593716cfc722bd8e5bc220195890632446719c3b821c7e27d05e562f89c->enter($__internal_db0bd593716cfc722bd8e5bc220195890632446719c3b821c7e27d05e562f89c_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
         // line 4
         echo "<section class=\"main_content\">
@@ -134,28 +134,46 @@ $context["reference"], "user", array()), "id", array()))), "html", null, true);
             // line 40
             echo twig_escape_filter($this->env, $this->getAttribute($context["reference"], "status", array()), "html", null, true);
             echo "</td>
-                <td>
-                    <a href=\"";
-            // line 42
-            echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("reference_show", array("id" => $this->getAttribute($context["reference"], "id", array()))), "html", null, true);
-            echo "\">view</a>
-                </td>
+
                 ";
-            // line 44
+            // line 42
             if ($this->env->getExtension('Symfony\Bridge\Twig\Extension\SecurityExtension')->isGranted("ROLE_USER")) {
-                // line 45
+                echo "&nbsp;
+                    <td>
+                        <a href=\"";
+                // line 44
+                echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("reference_show", array("id" => $this->getAttribute($context["reference"], "id", array()))), "html", null, true);
+                echo "\">view</a>
+                    </td>
+                ";
+            } else {
+                // line 47
+                echo "                    <td>
+                        <a href=\"";
+                // line 48
+                echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("reference_show2", array("id" => $this->getAttribute($context["reference"], "id", array()))), "html", null, true);
+                echo "\">view</a>
+                    </td>
+                ";
+            }
+            // line 51
+            echo "
+                ";
+            // line 52
+            if ($this->env->getExtension('Symfony\Bridge\Twig\Extension\SecurityExtension')->isGranted("ROLE_USER")) {
+                // line 53
                 echo "                <td>
                     <a href=\"";
-                // line 46
+                // line 54
                 echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("reference_edit", array("id" => $this->getAttribute($context["reference"], "id", array()))), "html", null, true);
                 echo "\">edit</a>
                 </td>
                 ";
             }
-            // line 49
+            // line 57
             echo "                <td>
                     <a href=\"";
-            // line 50
+            // line 58
             echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("reference_basket_add", array("id" => $this->getAttribute($context["reference"], "id", array()))), "html", null, true);
             echo "\">add to bib basket</a>
                 </td>
@@ -165,16 +183,16 @@ $context["reference"], "user", array()), "id", array()))), "html", null, true);
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['reference'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 54
+        // line 62
         echo "        </tbody>
     </table>
 </section>
 ";
         
-        $__internal_57db4f8308c874aa51f501b08bb46e55e6248f4f63e15d5114047539a76a1f2a->leave($__internal_57db4f8308c874aa51f501b08bb46e55e6248f4f63e15d5114047539a76a1f2a_prof);
+        $__internal_db0bd593716cfc722bd8e5bc220195890632446719c3b821c7e27d05e562f89c->leave($__internal_db0bd593716cfc722bd8e5bc220195890632446719c3b821c7e27d05e562f89c_prof);
 
         
-        $__internal_be13cc6daab24411b067cafa250d9898ebb1038f1e002a23e403a4d9f1801e7e->leave($__internal_be13cc6daab24411b067cafa250d9898ebb1038f1e002a23e403a4d9f1801e7e_prof);
+        $__internal_06a924365a00ded8ac04c4fe2a888df67277151fada36ad194563a867a81311d->leave($__internal_06a924365a00ded8ac04c4fe2a888df67277151fada36ad194563a867a81311d_prof);
 
     }
 
@@ -190,7 +208,7 @@ $context["reference"], "user", array()), "id", array()))), "html", null, true);
 
     public function getDebugInfo()
     {
-        return array (  169 => 54,  159 => 50,  156 => 49,  150 => 46,  147 => 45,  145 => 44,  140 => 42,  135 => 40,  130 => 39,  128 => 38,  127 => 37,  123 => 36,  119 => 35,  115 => 34,  111 => 33,  107 => 32,  103 => 31,  99 => 30,  93 => 29,  90 => 28,  86 => 27,  80 => 23,  76 => 21,  74 => 20,  52 => 5,  49 => 4,  40 => 3,  11 => 1,);
+        return array (  187 => 62,  177 => 58,  174 => 57,  168 => 54,  165 => 53,  163 => 52,  160 => 51,  154 => 48,  151 => 47,  145 => 44,  140 => 42,  135 => 40,  130 => 39,  128 => 38,  127 => 37,  123 => 36,  119 => 35,  115 => 34,  111 => 33,  107 => 32,  103 => 31,  99 => 30,  93 => 29,  90 => 28,  86 => 27,  80 => 23,  76 => 21,  74 => 20,  52 => 5,  49 => 4,  40 => 3,  11 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -243,9 +261,17 @@ $context["reference"], "user", array()), "id", array()))), "html", null, true);
                         'id': reference.user.id
                     }) }}\">{{ reference.user.email }}</a></td>
                 <td>{{ reference.status }}</td>
-                <td>
-                    <a href=\"{{ path('reference_show', { 'id': reference.id }) }}\">view</a>
-                </td>
+
+                {% if (is_granted('ROLE_USER')) %}&nbsp;
+                    <td>
+                        <a href=\"{{ path('reference_show', { 'id': reference.id }) }}\">view</a>
+                    </td>
+                {% else %}
+                    <td>
+                        <a href=\"{{ path('reference_show2', { 'id': reference.id }) }}\">view</a>
+                    </td>
+                {% endif %}
+
                 {% if (is_granted('ROLE_USER')) %}
                 <td>
                     <a href=\"{{ path('reference_edit', { 'id': reference.id }) }}\">edit</a>

@@ -21,29 +21,29 @@ class __TwigTemplate_0cd671269d498a1ebfa05738fb471caead880542394927caa2f50795ed8
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_ac4b8b237047efff4debb8698cc01d4c86abbef356e5d0eca8ccffb01a3c231f = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_ac4b8b237047efff4debb8698cc01d4c86abbef356e5d0eca8ccffb01a3c231f->enter($__internal_ac4b8b237047efff4debb8698cc01d4c86abbef356e5d0eca8ccffb01a3c231f_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "tag/show.html.twig"));
+        $__internal_2f37132d4095f2f0c45414e8da0bb125a9d579d407536b26cbf606b72094cf6c = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_2f37132d4095f2f0c45414e8da0bb125a9d579d407536b26cbf606b72094cf6c->enter($__internal_2f37132d4095f2f0c45414e8da0bb125a9d579d407536b26cbf606b72094cf6c_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "tag/show.html.twig"));
 
-        $__internal_fa5fececf75558e01b5db628cf374ebf01d0cfa10a417b349df63dce195354a4 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_fa5fececf75558e01b5db628cf374ebf01d0cfa10a417b349df63dce195354a4->enter($__internal_fa5fececf75558e01b5db628cf374ebf01d0cfa10a417b349df63dce195354a4_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "tag/show.html.twig"));
+        $__internal_4276faf44c816d12892f05927f7865168dc4fbb499e065d2cb3e25ffadbfff62 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_4276faf44c816d12892f05927f7865168dc4fbb499e065d2cb3e25ffadbfff62->enter($__internal_4276faf44c816d12892f05927f7865168dc4fbb499e065d2cb3e25ffadbfff62_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "tag/show.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_ac4b8b237047efff4debb8698cc01d4c86abbef356e5d0eca8ccffb01a3c231f->leave($__internal_ac4b8b237047efff4debb8698cc01d4c86abbef356e5d0eca8ccffb01a3c231f_prof);
+        $__internal_2f37132d4095f2f0c45414e8da0bb125a9d579d407536b26cbf606b72094cf6c->leave($__internal_2f37132d4095f2f0c45414e8da0bb125a9d579d407536b26cbf606b72094cf6c_prof);
 
         
-        $__internal_fa5fececf75558e01b5db628cf374ebf01d0cfa10a417b349df63dce195354a4->leave($__internal_fa5fececf75558e01b5db628cf374ebf01d0cfa10a417b349df63dce195354a4_prof);
+        $__internal_4276faf44c816d12892f05927f7865168dc4fbb499e065d2cb3e25ffadbfff62->leave($__internal_4276faf44c816d12892f05927f7865168dc4fbb499e065d2cb3e25ffadbfff62_prof);
 
     }
 
     // line 3
     public function block_body($context, array $blocks = array())
     {
-        $__internal_33ad156693eb87cb0b7de87c2ed2bccf7ba12e4ba03bcb6708175009f11b57c1 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_33ad156693eb87cb0b7de87c2ed2bccf7ba12e4ba03bcb6708175009f11b57c1->enter($__internal_33ad156693eb87cb0b7de87c2ed2bccf7ba12e4ba03bcb6708175009f11b57c1_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_063317e5faeb3461b95a3b8ace1f2d5c0955317d98652913b9cb71bb411948c5 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_063317e5faeb3461b95a3b8ace1f2d5c0955317d98652913b9cb71bb411948c5->enter($__internal_063317e5faeb3461b95a3b8ace1f2d5c0955317d98652913b9cb71bb411948c5_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
-        $__internal_59ffbba358462866c2a94e12d97765a7284ceb655e0a9cd0c6f87b2c17335232 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_59ffbba358462866c2a94e12d97765a7284ceb655e0a9cd0c6f87b2c17335232->enter($__internal_59ffbba358462866c2a94e12d97765a7284ceb655e0a9cd0c6f87b2c17335232_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_ec197c705288384acc2431d5b5a68a5458ce839ec936cc2d6e0b53cf892dcc38 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_ec197c705288384acc2431d5b5a68a5458ce839ec936cc2d6e0b53cf892dcc38->enter($__internal_ec197c705288384acc2431d5b5a68a5458ce839ec936cc2d6e0b53cf892dcc38_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
         // line 4
         echo "<section class=\"main_content\">
@@ -79,73 +79,76 @@ class __TwigTemplate_0cd671269d498a1ebfa05738fb471caead880542394927caa2f50795ed8
         echo "</td>
             </tr>
     </table>
-    <h3>References with ";
+    ";
         // line 25
-        echo twig_escape_filter($this->env, $this->getAttribute(($context["tag"] ?? $this->getContext($context, "tag")), "tagName", array()), "html", null, true);
-        echo " tag</h3>
+        if ($this->env->getExtension('Symfony\Bridge\Twig\Extension\SecurityExtension')->isGranted("ROLE_USER")) {
+            // line 26
+            echo "    <h3>References with ";
+            echo twig_escape_filter($this->env, $this->getAttribute(($context["tag"] ?? $this->getContext($context, "tag")), "tagName", array()), "html", null, true);
+            echo " tag</h3>
     <table>
         <tr>
            <td>";
-        // line 28
-        $context['_parent'] = $context;
-        $context['_seq'] = twig_ensure_traversable($this->getAttribute(($context["tag"] ?? $this->getContext($context, "tag")), "tagReferences", array()));
-        foreach ($context['_seq'] as $context["_key"] => $context["tagReference"]) {
             // line 29
-            echo "                           <li>
+            $context['_parent'] = $context;
+            $context['_seq'] = twig_ensure_traversable($this->getAttribute(($context["tag"] ?? $this->getContext($context, "tag")), "tagReferences", array()));
+            foreach ($context['_seq'] as $context["_key"] => $context["tagReference"]) {
+                // line 30
+                echo "                           <li>
                                <a href=\"";
-            // line 30
-            echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("reference_show", array("id" => $this->getAttribute(            // line 31
+                // line 31
+                echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("reference_show", array("id" => $this->getAttribute(                // line 32
 $context["tagReference"], "id", array()))), "html", null, true);
-            // line 32
-            echo "\">
+                // line 33
+                echo "\">
                                    ";
-            // line 33
-            echo twig_escape_filter($this->env, $this->getAttribute($context["tagReference"], "nameOfAuthor", array()), "html", null, true);
-            echo "
+                // line 34
+                echo twig_escape_filter($this->env, $this->getAttribute($context["tagReference"], "nameOfAuthor", array()), "html", null, true);
+                echo "
                                </a>
                            </li>
              ";
-        }
-        $_parent = $context['_parent'];
-        unset($context['_seq'], $context['_iterated'], $context['_key'], $context['tagReference'], $context['_parent'], $context['loop']);
-        $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 36
-        echo "</td>
+            }
+            $_parent = $context['_parent'];
+            unset($context['_seq'], $context['_iterated'], $context['_key'], $context['tagReference'], $context['_parent'], $context['loop']);
+            $context = array_intersect_key($context, $_parent) + $_parent;
+            // line 37
+            echo "</td>
         </tr>
     </table>
-
+    ";
+        }
+        // line 41
+        echo "
     <ul>
         <li>
             <a href=\"";
-        // line 42
+        // line 44
         echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("tag_index");
         echo "\">Back to the list</a>
         </li>
-        <li>
+        ";
+        // line 46
+        if ($this->env->getExtension('Symfony\Bridge\Twig\Extension\SecurityExtension')->isGranted("ROLE_USER")) {
+            // line 47
+            echo "        <li>
             <a href=\"";
-        // line 45
-        echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("tag_edit", array("id" => $this->getAttribute(($context["tag"] ?? $this->getContext($context, "tag")), "id", array()))), "html", null, true);
-        echo "\">Edit</a>
+            // line 48
+            echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("tag_edit", array("id" => $this->getAttribute(($context["tag"] ?? $this->getContext($context, "tag")), "id", array()))), "html", null, true);
+            echo "\">Edit</a>
         </li>
-        <li>
-            ";
-        // line 48
-        echo         $this->env->getRuntime('Symfony\Bridge\Twig\Form\TwigRenderer')->renderBlock(($context["delete_form"] ?? $this->getContext($context, "delete_form")), 'form_start');
+        ";
+        }
+        // line 51
         echo "
-                <input type=\"submit\" value=\"Delete\">
-            ";
-        // line 50
-        echo         $this->env->getRuntime('Symfony\Bridge\Twig\Form\TwigRenderer')->renderBlock(($context["delete_form"] ?? $this->getContext($context, "delete_form")), 'form_end');
-        echo "
-        </li>
     </ul>
 </section>
 ";
         
-        $__internal_59ffbba358462866c2a94e12d97765a7284ceb655e0a9cd0c6f87b2c17335232->leave($__internal_59ffbba358462866c2a94e12d97765a7284ceb655e0a9cd0c6f87b2c17335232_prof);
+        $__internal_ec197c705288384acc2431d5b5a68a5458ce839ec936cc2d6e0b53cf892dcc38->leave($__internal_ec197c705288384acc2431d5b5a68a5458ce839ec936cc2d6e0b53cf892dcc38_prof);
 
         
-        $__internal_33ad156693eb87cb0b7de87c2ed2bccf7ba12e4ba03bcb6708175009f11b57c1->leave($__internal_33ad156693eb87cb0b7de87c2ed2bccf7ba12e4ba03bcb6708175009f11b57c1_prof);
+        $__internal_063317e5faeb3461b95a3b8ace1f2d5c0955317d98652913b9cb71bb411948c5->leave($__internal_063317e5faeb3461b95a3b8ace1f2d5c0955317d98652913b9cb71bb411948c5_prof);
 
     }
 
@@ -161,7 +164,7 @@ $context["tagReference"], "id", array()))), "html", null, true);
 
     public function getDebugInfo()
     {
-        return array (  138 => 50,  133 => 48,  127 => 45,  121 => 42,  113 => 36,  103 => 33,  100 => 32,  98 => 31,  97 => 30,  94 => 29,  90 => 28,  84 => 25,  78 => 22,  71 => 18,  64 => 14,  57 => 10,  49 => 4,  40 => 3,  11 => 1,);
+        return array (  143 => 51,  137 => 48,  134 => 47,  132 => 46,  127 => 44,  122 => 41,  116 => 37,  106 => 34,  103 => 33,  101 => 32,  100 => 31,  97 => 30,  93 => 29,  86 => 26,  84 => 25,  78 => 22,  71 => 18,  64 => 14,  57 => 10,  49 => 4,  40 => 3,  11 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -198,6 +201,7 @@ $context["tagReference"], "id", array()))), "html", null, true);
                 <td>{{ tag.noOfVotes }}</td>
             </tr>
     </table>
+    {% if (is_granted('ROLE_USER')) %}
     <h3>References with {{ tag.tagName }} tag</h3>
     <table>
         <tr>
@@ -212,19 +216,18 @@ $context["tagReference"], "id", array()))), "html", null, true);
              {% endfor %}</td>
         </tr>
     </table>
+    {% endif %}
 
     <ul>
         <li>
             <a href=\"{{ path('tag_index') }}\">Back to the list</a>
         </li>
+        {% if (is_granted('ROLE_USER')) %}
         <li>
             <a href=\"{{ path('tag_edit', { 'id': tag.id }) }}\">Edit</a>
         </li>
-        <li>
-            {{ form_start(delete_form) }}
-                <input type=\"submit\" value=\"Delete\">
-            {{ form_end(delete_form) }}
-        </li>
+        {% endif %}
+
     </ul>
 </section>
 {% endblock %}

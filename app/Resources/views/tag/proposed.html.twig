@@ -1,0 +1,52 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+<section class="main_content">
+    <h2>Public Tags &nbsp;&nbsp;
+        {% if (is_granted('ROLE_USER')) %}&nbsp;
+        &nbsp;<a href="{{ path('tag_new') }}"> + Create a new tag</a>
+    {% else %}
+        &nbsp;<a href="{{ path('tag_new_user') }}"> + Create a new tag</a>
+        {% endif %}</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Tag Name</th>
+                <th>Status</th>
+                <th>No of Votes</th>
+                <th>
+                </th>
+                {% if (is_granted('ROLE_USER')) %}
+                <th>View</th>
+                <th>Update</th>
+                {% endif %}
+            </tr>
+        </thead>
+        <tbody>
+        {% for tag in tags %}
+            <tr>
+                <td><a href="{{ path('tag_show', { 'id': tag.id }) }}">{{ tag.id }}</a></td>
+                <td>{{ tag.tagName }}</td>
+                <td>{{ tag.status }}</td>
+                <td>{{ tag.noOfVotes }}</td>
+                <td>
+                    <a href="{{ path('tag_vote', { 'id': tag.id }) }}"><< VOTE >></a>
+                </td>
+                {% if (is_granted('ROLE_USER')) %}
+                <td>
+                    <a href="{{ path('tag_show', { 'id': tag.id }) }}">view</a>
+                </td>
+
+                <td>
+                    <a href="{{ path('tag_edit', { 'id': tag.id }) }}">edit</a>
+                </td>
+                {% endif %}
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+</section>
+{% endblock %}

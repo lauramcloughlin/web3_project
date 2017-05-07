@@ -154,6 +154,17 @@ class appDevDebugProjectContainerUrlMatcher extends Symfony\Bundle\FrameworkBund
             }
             not_bibliography_show:
 
+            // bibliography_show2
+            if (preg_match('#^/bibliography/(?P<id>[^/]++)/2$#s', $pathinfo, $matches)) {
+                if (!in_array($this->context->getMethod(), array('GET', 'HEAD'))) {
+                    $allow = array_merge($allow, array('GET', 'HEAD'));
+                    goto not_bibliography_show2;
+                }
+
+                return $this->mergeDefaults(array_replace($matches, array('_route' => 'bibliography_show2')), array (  '_controller' => 'AppBundle\\Controller\\BibliographyController::showAnonAction',));
+            }
+            not_bibliography_show2:
+
             // bibliography_edit
             if (preg_match('#^/bibliography/(?P<id>[^/]++)/edit$#s', $pathinfo, $matches)) {
                 if (!in_array($this->context->getMethod(), array('GET', 'POST', 'HEAD'))) {
@@ -230,6 +241,17 @@ class appDevDebugProjectContainerUrlMatcher extends Symfony\Bundle\FrameworkBund
             }
             not_reference_index:
 
+            // reference_user
+            if ($pathinfo === '/reference/user') {
+                if (!in_array($this->context->getMethod(), array('GET', 'HEAD'))) {
+                    $allow = array_merge($allow, array('GET', 'HEAD'));
+                    goto not_reference_user;
+                }
+
+                return array (  '_controller' => 'AppBundle\\Controller\\ReferenceController::userReferenceAction',  '_route' => 'reference_user',);
+            }
+            not_reference_user:
+
             // reference_new
             if ($pathinfo === '/reference/new') {
                 if (!in_array($this->context->getMethod(), array('GET', 'POST', 'HEAD'))) {
@@ -251,6 +273,17 @@ class appDevDebugProjectContainerUrlMatcher extends Symfony\Bundle\FrameworkBund
                 return $this->mergeDefaults(array_replace($matches, array('_route' => 'reference_show')), array (  '_controller' => 'AppBundle\\Controller\\ReferenceController::showAction',));
             }
             not_reference_show:
+
+            // reference_show2
+            if (preg_match('#^/reference/(?P<id>[^/]++)/2$#s', $pathinfo, $matches)) {
+                if (!in_array($this->context->getMethod(), array('GET', 'HEAD'))) {
+                    $allow = array_merge($allow, array('GET', 'HEAD'));
+                    goto not_reference_show2;
+                }
+
+                return $this->mergeDefaults(array_replace($matches, array('_route' => 'reference_show2')), array (  '_controller' => 'AppBundle\\Controller\\ReferenceController::showAnonAction',));
+            }
+            not_reference_show2:
 
             // reference_edit
             if (preg_match('#^/reference/(?P<id>[^/]++)/edit$#s', $pathinfo, $matches)) {
@@ -305,16 +338,63 @@ class appDevDebugProjectContainerUrlMatcher extends Symfony\Bundle\FrameworkBund
             }
             not_tag_index:
 
-            // tag_new
-            if ($pathinfo === '/tag/new') {
-                if (!in_array($this->context->getMethod(), array('GET', 'POST', 'HEAD'))) {
-                    $allow = array_merge($allow, array('GET', 'POST', 'HEAD'));
-                    goto not_tag_new;
+            // tag_proposed
+            if ($pathinfo === '/tag/proposed') {
+                if (!in_array($this->context->getMethod(), array('GET', 'HEAD'))) {
+                    $allow = array_merge($allow, array('GET', 'HEAD'));
+                    goto not_tag_proposed;
                 }
 
-                return array (  '_controller' => 'AppBundle\\Controller\\TagController::newAction',  '_route' => 'tag_new',);
+                return array (  '_controller' => 'AppBundle\\Controller\\TagController::proposedAction',  '_route' => 'tag_proposed',);
             }
-            not_tag_new:
+            not_tag_proposed:
+
+            // tag_user
+            if ($pathinfo === '/tag/user') {
+                if (!in_array($this->context->getMethod(), array('GET', 'HEAD'))) {
+                    $allow = array_merge($allow, array('GET', 'HEAD'));
+                    goto not_tag_user;
+                }
+
+                return array (  '_controller' => 'AppBundle\\Controller\\TagController::userTagAction',  '_route' => 'tag_user',);
+            }
+            not_tag_user:
+
+            // tag_vote
+            if (preg_match('#^/tag/(?P<id>[^/]++)/vote$#s', $pathinfo, $matches)) {
+                if (!in_array($this->context->getMethod(), array('GET', 'HEAD'))) {
+                    $allow = array_merge($allow, array('GET', 'HEAD'));
+                    goto not_tag_vote;
+                }
+
+                return $this->mergeDefaults(array_replace($matches, array('_route' => 'tag_vote')), array (  '_controller' => 'AppBundle\\Controller\\TagController::voteAction',));
+            }
+            not_tag_vote:
+
+            if (0 === strpos($pathinfo, '/tag/new')) {
+                // tag_new
+                if ($pathinfo === '/tag/new') {
+                    if (!in_array($this->context->getMethod(), array('GET', 'POST', 'HEAD'))) {
+                        $allow = array_merge($allow, array('GET', 'POST', 'HEAD'));
+                        goto not_tag_new;
+                    }
+
+                    return array (  '_controller' => 'AppBundle\\Controller\\TagController::newAction',  '_route' => 'tag_new',);
+                }
+                not_tag_new:
+
+                // tag_new_user
+                if ($pathinfo === '/tag/new2') {
+                    if (!in_array($this->context->getMethod(), array('GET', 'POST', 'HEAD'))) {
+                        $allow = array_merge($allow, array('GET', 'POST', 'HEAD'));
+                        goto not_tag_new_user;
+                    }
+
+                    return array (  '_controller' => 'AppBundle\\Controller\\TagController::newAnonTagAction',  '_route' => 'tag_new_user',);
+                }
+                not_tag_new_user:
+
+            }
 
             // tag_show
             if (preg_match('#^/tag/(?P<id>[^/]++)$#s', $pathinfo, $matches)) {

@@ -26,6 +26,7 @@
                 <td>{{ bibliography.user.email }}</td>
             </tr>
     </table>
+    {% if (bibliography.bibliographyReferences) is not empty %}
     <h3>References in the {{ bibliography.bibliographyName }} Bibliography</h3>
     <table>
         <tr>
@@ -40,18 +41,18 @@
                 {% endfor %}</td>
         </tr>
     </table>
+    {% endif %}
+    <br>
     <ul>
         <li>
             <a href="{{ path('bibliography_index') }}">Back to the list</a>
         </li>
+        {% if (is_granted('ROLE_USER')) %}
         <li>
             <a href="{{ path('bibliography_edit', { 'id': bibliography.id }) }}">Edit</a>
         </li>
-        <li>
-            {{ form_start(delete_form) }}
-                <input type="submit" value="Delete">
-            {{ form_end(delete_form) }}
-        </li>
+        {% endif %}
     </ul>
+    <br>
 </section>
 {% endblock %}

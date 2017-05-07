@@ -22,6 +22,7 @@
                 <td>{{ tag.noOfVotes }}</td>
             </tr>
     </table>
+    {% if (is_granted('ROLE_USER')) %}
     <h3>References with {{ tag.tagName }} tag</h3>
     <table>
         <tr>
@@ -36,19 +37,18 @@
              {% endfor %}</td>
         </tr>
     </table>
+    {% endif %}
 
     <ul>
         <li>
             <a href="{{ path('tag_index') }}">Back to the list</a>
         </li>
+        {% if (is_granted('ROLE_USER')) %}
         <li>
             <a href="{{ path('tag_edit', { 'id': tag.id }) }}">Edit</a>
         </li>
-        <li>
-            {{ form_start(delete_form) }}
-                <input type="submit" value="Delete">
-            {{ form_end(delete_form) }}
-        </li>
+        {% endif %}
+
     </ul>
 </section>
 {% endblock %}

@@ -13,8 +13,11 @@ class BibliographyRepository extends \Doctrine\ORM\EntityRepository
     public function findAllLecturerBibs()
 {
     return $this->createQueryBuilder('bibliography')
-        ->andWhere('bibliography.userid = :userid')
-        ->setParameter('userid', 2)
+        ->join('bibliography.user', 'user')
+        ->Where('user.roles LIKE :role')
+        ->setParameter('role', '%LECTURER%')
+        ->andWhere('bibliography.status = :status')
+        ->setParameter('status', 'public')
         ->getQuery()
         ->execute();
 }

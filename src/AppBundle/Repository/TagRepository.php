@@ -11,5 +11,30 @@ namespace AppBundle\Repository;
 class TagRepository extends \Doctrine\ORM\EntityRepository
 {
 
+    public function findAllPublicTags()
+    {
+        return $this->createQueryBuilder('tag')
+            ->andWhere('tag.status = :status')
+            ->setParameter('status', 'accepted')
+            ->getQuery()
+            ->execute();
+    }
 
+    public function findAllProposedTags()
+    {
+        return $this->createQueryBuilder('tag')
+            ->andWhere('tag.status = :status')
+            ->setParameter('status', 'proposed')
+            ->getQuery()
+            ->execute();
+    }
+
+    public function getTagsByUser($user)
+    {
+        return $this->createQueryBuilder('tag')
+            ->andWhere('tag.user = :user')
+            ->setParameter('user', $user)
+            ->getQuery()
+            ->execute();
+    }
 }

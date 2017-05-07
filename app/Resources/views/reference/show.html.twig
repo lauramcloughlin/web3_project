@@ -82,23 +82,17 @@
                         {% endfor %}
                     </ul></td>
             </tr>
-
-
-
     </table>
 
     <ul>
         <li>
             <a href="{{ path('reference_index') }}">Back to the list</a>
         </li>
+        {% if (is_granted('ROLE_USER')) %}
         <li>
             <a href="{{ path('reference_edit', { 'id': reference.id }) }}">Edit</a>
         </li>
-        <li>
-            {{ form_start(delete_form) }}
-                <input type="submit" value="Delete">
-            {{ form_end(delete_form) }}
-        </li>
+        {% endif %}
     </ul>
 </section>
 {% endblock %}

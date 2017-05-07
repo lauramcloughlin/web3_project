@@ -31,7 +31,9 @@ class ReferenceType extends AbstractType
             ->add('status', ChoiceType::class, [
                 'placeholder' => 'Select Status',
                 'choices' => [
+                    'Accepted' => 'Accepted',
                     'Pending' => 'Pending',
+                    'Rejected' => 'Rejected',
                     'Public' => 'Public',
                 ]
             ])

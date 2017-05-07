@@ -26,9 +26,19 @@
                 <td>{{ bibliography.textSummary }}</td>
                 <td>{{ bibliography.status }}</td>
                 <td>{{ bibliography.user.email }}</td>
-                <td>
-                    <a href="{{ path('bibliography_show', { 'id': bibliography.id }) }}">view</a>
+
+                {% if (is_granted('ROLE_USER')) %}&nbsp;
+                &nbsp;<td>
+                <a href="{{ path('bibliography_show', { 'id': bibliography.id }) }}">view</a>
                 </td>
+            {% else %}
+                <td>
+                    <a href="{{ path('bibliography_show2', { 'id': bibliography.id }) }}">view</a>
+                </td>
+                {% endif %}</h2>
+
+
+
                 {% if (is_granted('ROLE_USER')) %}
                 <td>
                     <a href="{{ path('bibliography_edit', { 'id': bibliography.id }) }}">edit</a>

@@ -27,7 +27,7 @@ class BibliographyController extends Controller
     {
         $em = $this->getDoctrine()->getManager();
 
-        $bibliographies = $em->getRepository('AppBundle:Bibliography')->findAll();
+        $bibliographies = $em->getRepository('AppBundle:Bibliography')->findAllLecturerBibs();
 
         return $this->render('bibliography/index.html.twig', array(
             'bibliographies' => $bibliographies,
@@ -42,6 +42,7 @@ class BibliographyController extends Controller
      */
     public function userBibliographyAction()
     {
+        $this->denyAccessUnlessGranted('ROLE_USER');
 
         $user = $this->getUser();
         //$userId = $user->getId();
@@ -64,6 +65,8 @@ class BibliographyController extends Controller
      */
     public function newAction(Request $request)
     {
+        $this->denyAccessUnlessGranted('ROLE_USER');
+
         $bibliography = new Bibliography();
         $form = $this->createForm('AppBundle\Form\BibliographyType', $bibliography);
         $form->handleRequest($request);
@@ -103,6 +106,25 @@ class BibliographyController extends Controller
         ));
     }
 
+
+    /**
+     * Finds and displays a bibliography entity.
+     *
+     * @Route("/{id}/2", name="bibliography_show2")
+     * @Method("GET")
+     */
+    public function showAnonAction(Bibliography $bibliography)
+    {
+        $deleteForm = $this->createDeleteForm($bibliography);
+
+        return $this->render('bibliography/show2.html.twig', array(
+            'bibliography' => $bibliography,
+            'delete_form' => $deleteForm->createView(),
+        ));
+    }
+
+
+
     /**
      * Displays a form to edit an existing bibliography entity.
      *
@@ -111,6 +133,8 @@ class BibliographyController extends Controller
      */
     public function editAction(Request $request, Bibliography $bibliography)
     {
+        $this->denyAccessUnlessGranted('ROLE_USER');
+
         $deleteForm = $this->createDeleteForm($bibliography);
         $editForm = $this->createForm('AppBundle\Form\BibliographyType', $bibliography);
         $editForm->handleRequest($request);
@@ -136,6 +160,8 @@ class BibliographyController extends Controller
      */
     public function deleteAction(Request $request, Bibliography $bibliography)
     {
+        $this->denyAccessUnlessGranted('ROLE_USER');
+
         $form = $this->createDeleteForm($bibliography);
         $form->handleRequest($request);
 

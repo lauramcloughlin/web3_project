@@ -31,12 +31,37 @@ class ReferenceController extends Controller
     {
         $em = $this->getDoctrine()->getManager();
 
-        $references = $em->getRepository('AppBundle:Reference')->findAll();
+        $references = $em->getRepository('AppBundle:Reference')->findAllPublicRefs();
 
         return $this->render('reference/index.html.twig', array(
             'references' => $references,
         ));
     }
+
+
+    /**
+     * Lists all users references entities.
+     *
+     * @Route("/user", name="reference_user")
+     * @Method("GET")
+     */
+    public function userReferenceAction()
+    {
+        $this->denyAccessUnlessGranted('ROLE_USER');
+
+        $user = $this->getUser();
+
+        $em = $this->getDoctrine()->getManager();
+
+        $userReferences = $em->getRepository('AppBundle:Reference')
+            ->getReferencesByUser($user);
+
+        return $this->render('reference/user.html.twig', array(
+            'references' => $userReferences,
+        ));
+    }
+
+
 
     /**
      * Creates a new reference entity.
@@ -88,6 +113,24 @@ class ReferenceController extends Controller
             'delete_form' => $deleteForm->createView(),
         ));
     }
+
+
+    /**
+     * Finds and displays a reference entity.
+     *
+     * @Route("/{id}/2", name="reference_show2")
+     * @Method("GET")
+     */
+    public function showAnonAction(Reference $reference)
+    {
+        $deleteForm = $this->createDeleteForm($reference);
+
+        return $this->render('reference/show2.html.twig', array(
+            'reference' => $reference,
+            'delete_form' => $deleteForm->createView(),
+        ));
+    }
+
 
     /**
      * Displays a form to edit an existing reference entity.

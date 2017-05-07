@@ -13,11 +13,20 @@ use Doctrine\ORM\EntityRepository;
 class ReferenceRepository extends EntityRepository
 {
 
-    public function findAllAccepted()
+    public function findAllPublicRefs()
     {
         return $this->createQueryBuilder('reference')
             ->andWhere('reference.status = :status')
             ->setParameter('status', 'public')
+            ->getQuery()
+            ->execute();
+    }
+
+    public function getReferencesByUser($user)
+    {
+        return $this->createQueryBuilder('reference')
+            ->andWhere('reference.user = :user')
+            ->setParameter('user', $user)
             ->getQuery()
             ->execute();
     }

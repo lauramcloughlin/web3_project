@@ -21,36 +21,40 @@ class __TwigTemplate_24f610a0bc8204e18f9faade4e6cead4a7810827cdd3826782c618e9ba4
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_ce4a810765fe2730a37c47c194a6a9083420e533b5eeb8b76f9a8d003db8d6b7 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_ce4a810765fe2730a37c47c194a6a9083420e533b5eeb8b76f9a8d003db8d6b7->enter($__internal_ce4a810765fe2730a37c47c194a6a9083420e533b5eeb8b76f9a8d003db8d6b7_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "bibliography/index.html.twig"));
+        $__internal_861b82895a03744b64e882e264ed5d5fa24e3f05ab224420d08eeabb34758273 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_861b82895a03744b64e882e264ed5d5fa24e3f05ab224420d08eeabb34758273->enter($__internal_861b82895a03744b64e882e264ed5d5fa24e3f05ab224420d08eeabb34758273_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "bibliography/index.html.twig"));
 
-        $__internal_2f3aff794b8a40e7247e22de315fccb5ac02447644c20f0f77742a8150a0b8d8 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_2f3aff794b8a40e7247e22de315fccb5ac02447644c20f0f77742a8150a0b8d8->enter($__internal_2f3aff794b8a40e7247e22de315fccb5ac02447644c20f0f77742a8150a0b8d8_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "bibliography/index.html.twig"));
+        $__internal_84919a017df09cda5c39f453f4bb599f4dd0c8c9139e69ae4f3cc316a2a1bf93 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_84919a017df09cda5c39f453f4bb599f4dd0c8c9139e69ae4f3cc316a2a1bf93->enter($__internal_84919a017df09cda5c39f453f4bb599f4dd0c8c9139e69ae4f3cc316a2a1bf93_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "bibliography/index.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_ce4a810765fe2730a37c47c194a6a9083420e533b5eeb8b76f9a8d003db8d6b7->leave($__internal_ce4a810765fe2730a37c47c194a6a9083420e533b5eeb8b76f9a8d003db8d6b7_prof);
+        $__internal_861b82895a03744b64e882e264ed5d5fa24e3f05ab224420d08eeabb34758273->leave($__internal_861b82895a03744b64e882e264ed5d5fa24e3f05ab224420d08eeabb34758273_prof);
 
         
-        $__internal_2f3aff794b8a40e7247e22de315fccb5ac02447644c20f0f77742a8150a0b8d8->leave($__internal_2f3aff794b8a40e7247e22de315fccb5ac02447644c20f0f77742a8150a0b8d8_prof);
+        $__internal_84919a017df09cda5c39f453f4bb599f4dd0c8c9139e69ae4f3cc316a2a1bf93->leave($__internal_84919a017df09cda5c39f453f4bb599f4dd0c8c9139e69ae4f3cc316a2a1bf93_prof);
 
     }
 
     // line 3
     public function block_body($context, array $blocks = array())
     {
-        $__internal_16683b07cf49ad14bd9f8f310f2b80a56fdd6bd42c3b1c647a547e4ef72d90aa = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_16683b07cf49ad14bd9f8f310f2b80a56fdd6bd42c3b1c647a547e4ef72d90aa->enter($__internal_16683b07cf49ad14bd9f8f310f2b80a56fdd6bd42c3b1c647a547e4ef72d90aa_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_c5a201fda1e49ee6665f4b8085d5dabfbb49d2f355629c75843b465a11bf18b4 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_c5a201fda1e49ee6665f4b8085d5dabfbb49d2f355629c75843b465a11bf18b4->enter($__internal_c5a201fda1e49ee6665f4b8085d5dabfbb49d2f355629c75843b465a11bf18b4_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
-        $__internal_56d4a2bb73a67e58b194fc5f6dfff6b18b4c8e800f680de00607a3d469b7289b = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_56d4a2bb73a67e58b194fc5f6dfff6b18b4c8e800f680de00607a3d469b7289b->enter($__internal_56d4a2bb73a67e58b194fc5f6dfff6b18b4c8e800f680de00607a3d469b7289b_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_46f93b645c97df5bc03948d0fc0a0b3f53553ec42b92030f7d799f7fb30365f1 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_46f93b645c97df5bc03948d0fc0a0b3f53553ec42b92030f7d799f7fb30365f1->enter($__internal_46f93b645c97df5bc03948d0fc0a0b3f53553ec42b92030f7d799f7fb30365f1_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
         // line 4
         echo "<section class=\"main_content\">
-    <h2>Bibliographies &nbsp;&nbsp;<a href=\"";
+    <h2>Bibliographies ";
         // line 5
-        echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("bibliography_new");
-        echo "\">+ Create a new bibliography</a></h2>
+        if ($this->env->getExtension('Symfony\Bridge\Twig\Extension\SecurityExtension')->isGranted("ROLE_USER")) {
+            echo "&nbsp;&nbsp;<a href=\"";
+            echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("bibliography_new");
+            echo "\">+ Create a new bibliography</a>";
+        }
+        echo "</h2>
 
     <table>
         <thead>
@@ -61,68 +65,103 @@ class __TwigTemplate_24f610a0bc8204e18f9faade4e6cead4a7810827cdd3826782c618e9ba4
                 <th>Status</th>
                 <th>User</th>
                 <th>View</th>
-                <th>Update</th>
-            </tr>
+                ";
+        // line 16
+        if ($this->env->getExtension('Symfony\Bridge\Twig\Extension\SecurityExtension')->isGranted("ROLE_USER")) {
+            // line 17
+            echo "                <th>Update</th>
+                ";
+        }
+        // line 19
+        echo "            </tr>
         </thead>
         <tbody>
         ";
-        // line 20
+        // line 22
         $context['_parent'] = $context;
         $context['_seq'] = twig_ensure_traversable(($context["bibliographies"] ?? $this->getContext($context, "bibliographies")));
         foreach ($context['_seq'] as $context["_key"] => $context["bibliography"]) {
-            // line 21
+            // line 23
             echo "            <tr>
                 <td><a href=\"";
-            // line 22
+            // line 24
             echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("bibliography_show", array("id" => $this->getAttribute($context["bibliography"], "id", array()))), "html", null, true);
             echo "\">";
             echo twig_escape_filter($this->env, $this->getAttribute($context["bibliography"], "id", array()), "html", null, true);
             echo "</a></td>
                 <td>";
-            // line 23
+            // line 25
             echo twig_escape_filter($this->env, $this->getAttribute($context["bibliography"], "bibliographyName", array()), "html", null, true);
             echo "</td>
                 <td>";
-            // line 24
+            // line 26
             echo twig_escape_filter($this->env, $this->getAttribute($context["bibliography"], "textSummary", array()), "html", null, true);
             echo "</td>
                 <td>";
-            // line 25
+            // line 27
             echo twig_escape_filter($this->env, $this->getAttribute($context["bibliography"], "status", array()), "html", null, true);
             echo "</td>
                 <td>";
-            // line 26
+            // line 28
             echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute($context["bibliography"], "user", array()), "email", array()), "html", null, true);
             echo "</td>
-                <td>
-                    <a href=\"";
-            // line 28
-            echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("bibliography_show", array("id" => $this->getAttribute($context["bibliography"], "id", array()))), "html", null, true);
-            echo "\">view</a>
+
+                ";
+            // line 30
+            if ($this->env->getExtension('Symfony\Bridge\Twig\Extension\SecurityExtension')->isGranted("ROLE_USER")) {
+                echo "&nbsp;
+                &nbsp;<td>
+                <a href=\"";
+                // line 32
+                echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("bibliography_show", array("id" => $this->getAttribute($context["bibliography"], "id", array()))), "html", null, true);
+                echo "\">view</a>
                 </td>
-                <td>
+            ";
+            } else {
+                // line 35
+                echo "                <td>
                     <a href=\"";
-            // line 31
-            echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("bibliography_edit", array("id" => $this->getAttribute($context["bibliography"], "id", array()))), "html", null, true);
-            echo "\">edit</a>
+                // line 36
+                echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("bibliography_show2", array("id" => $this->getAttribute($context["bibliography"], "id", array()))), "html", null, true);
+                echo "\">view</a>
                 </td>
-            </tr>
+                ";
+            }
+            // line 38
+            echo "</h2>
+
+
+
+                ";
+            // line 42
+            if ($this->env->getExtension('Symfony\Bridge\Twig\Extension\SecurityExtension')->isGranted("ROLE_USER")) {
+                // line 43
+                echo "                <td>
+                    <a href=\"";
+                // line 44
+                echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("bibliography_edit", array("id" => $this->getAttribute($context["bibliography"], "id", array()))), "html", null, true);
+                echo "\">edit</a>
+                </td>
+                ";
+            }
+            // line 47
+            echo "            </tr>
         ";
         }
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['bibliography'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 35
+        // line 49
         echo "        </tbody>
     </table>
 
 </section>
 ";
         
-        $__internal_56d4a2bb73a67e58b194fc5f6dfff6b18b4c8e800f680de00607a3d469b7289b->leave($__internal_56d4a2bb73a67e58b194fc5f6dfff6b18b4c8e800f680de00607a3d469b7289b_prof);
+        $__internal_46f93b645c97df5bc03948d0fc0a0b3f53553ec42b92030f7d799f7fb30365f1->leave($__internal_46f93b645c97df5bc03948d0fc0a0b3f53553ec42b92030f7d799f7fb30365f1_prof);
 
         
-        $__internal_16683b07cf49ad14bd9f8f310f2b80a56fdd6bd42c3b1c647a547e4ef72d90aa->leave($__internal_16683b07cf49ad14bd9f8f310f2b80a56fdd6bd42c3b1c647a547e4ef72d90aa_prof);
+        $__internal_c5a201fda1e49ee6665f4b8085d5dabfbb49d2f355629c75843b465a11bf18b4->leave($__internal_c5a201fda1e49ee6665f4b8085d5dabfbb49d2f355629c75843b465a11bf18b4_prof);
 
     }
 
@@ -138,7 +177,7 @@ class __TwigTemplate_24f610a0bc8204e18f9faade4e6cead4a7810827cdd3826782c618e9ba4
 
     public function getDebugInfo()
     {
-        return array (  116 => 35,  106 => 31,  100 => 28,  95 => 26,  91 => 25,  87 => 24,  83 => 23,  77 => 22,  74 => 21,  70 => 20,  52 => 5,  49 => 4,  40 => 3,  11 => 1,);
+        return array (  155 => 49,  148 => 47,  142 => 44,  139 => 43,  137 => 42,  131 => 38,  125 => 36,  122 => 35,  116 => 32,  111 => 30,  106 => 28,  102 => 27,  98 => 26,  94 => 25,  88 => 24,  85 => 23,  81 => 22,  76 => 19,  72 => 17,  70 => 16,  52 => 5,  49 => 4,  40 => 3,  11 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -155,7 +194,7 @@ class __TwigTemplate_24f610a0bc8204e18f9faade4e6cead4a7810827cdd3826782c618e9ba4
 
 {% block body %}
 <section class=\"main_content\">
-    <h2>Bibliographies &nbsp;&nbsp;<a href=\"{{ path('bibliography_new') }}\">+ Create a new bibliography</a></h2>
+    <h2>Bibliographies {% if (is_granted('ROLE_USER')) %}&nbsp;&nbsp;<a href=\"{{ path('bibliography_new') }}\">+ Create a new bibliography</a>{% endif %}</h2>
 
     <table>
         <thead>
@@ -166,7 +205,9 @@ class __TwigTemplate_24f610a0bc8204e18f9faade4e6cead4a7810827cdd3826782c618e9ba4
                 <th>Status</th>
                 <th>User</th>
                 <th>View</th>
+                {% if (is_granted('ROLE_USER')) %}
                 <th>Update</th>
+                {% endif %}
             </tr>
         </thead>
         <tbody>
@@ -177,12 +218,24 @@ class __TwigTemplate_24f610a0bc8204e18f9faade4e6cead4a7810827cdd3826782c618e9ba4
                 <td>{{ bibliography.textSummary }}</td>
                 <td>{{ bibliography.status }}</td>
                 <td>{{ bibliography.user.email }}</td>
-                <td>
-                    <a href=\"{{ path('bibliography_show', { 'id': bibliography.id }) }}\">view</a>
+
+                {% if (is_granted('ROLE_USER')) %}&nbsp;
+                &nbsp;<td>
+                <a href=\"{{ path('bibliography_show', { 'id': bibliography.id }) }}\">view</a>
                 </td>
+            {% else %}
+                <td>
+                    <a href=\"{{ path('bibliography_show2', { 'id': bibliography.id }) }}\">view</a>
+                </td>
+                {% endif %}</h2>
+
+
+
+                {% if (is_granted('ROLE_USER')) %}
                 <td>
                     <a href=\"{{ path('bibliography_edit', { 'id': bibliography.id }) }}\">edit</a>
                 </td>
+                {% endif %}
             </tr>
         {% endfor %}
         </tbody>

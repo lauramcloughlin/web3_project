@@ -2,7 +2,10 @@
 
 {% block body %}
 <section class="main_content">
-    <h2>Tags &nbsp;&nbsp;<a href="{{ path('tag_new') }}">+ Create a new tag</a></h2>
+    <h2>Public Tags &nbsp;{% if (is_granted('ROLE_USER')) %}&nbsp;
+        &nbsp;<a href="{{ path('tag_new') }}"> + Create a new tag</a>
+        {% endif %}
+    </h2>
 
     <table>
         <thead>
@@ -11,8 +14,10 @@
                 <th>Tag Name</th>
                 <th>Status</th>
                 <th>No of Votes</th>
+                {% if (is_granted('ROLE_USER')) %}
                 <th>View</th>
                 <th>Update</th>
+                {% endif %}
             </tr>
         </thead>
         <tbody>
@@ -22,12 +27,15 @@
                 <td>{{ tag.tagName }}</td>
                 <td>{{ tag.status }}</td>
                 <td>{{ tag.noOfVotes }}</td>
+                {% if (is_granted('ROLE_USER')) %}
                 <td>
                     <a href="{{ path('tag_show', { 'id': tag.id }) }}">view</a>
                 </td>
+
                 <td>
                     <a href="{{ path('tag_edit', { 'id': tag.id }) }}">edit</a>
                 </td>
+                {% endif %}
             </tr>
         {% endfor %}
         </tbody>

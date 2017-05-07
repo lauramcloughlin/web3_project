@@ -13,9 +13,6 @@
             <td> {{ form_row(form.status) }}</td>
         </tr>
         <tr>
-            <td> {{ form_row(form.noOfVotes) }}</td>
-        </tr>
-        <tr>
             <td>  <input type="submit" value="Update" /></td>
         </tr>
         {{ form_end(form) }}
@@ -23,11 +20,6 @@
     <ul>
         <li>
             <a href="{{ path('tag_index') }}">Back to the list</a>
-        </li>
-        <li>
-            {{ form_start(delete_form) }}
-                <input type="submit" value="Delete">
-            {{ form_end(delete_form) }}
         </li>
     </ul>
 </section>

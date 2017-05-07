@@ -21,29 +21,29 @@ class __TwigTemplate_0425d7ce3b00bd20a4c604621574d5fd470e19015a8ab269f1ffe0f5b6a
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_4070df70da6faf9601d86efcf11c497c72f1ea1644af4670b3d302035d73b6a2 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_4070df70da6faf9601d86efcf11c497c72f1ea1644af4670b3d302035d73b6a2->enter($__internal_4070df70da6faf9601d86efcf11c497c72f1ea1644af4670b3d302035d73b6a2_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "bibliography/show.html.twig"));
+        $__internal_f49261ba96a7113715daf06d780ed1c44b19599ac43d97389a97a1e44359e0dd = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_f49261ba96a7113715daf06d780ed1c44b19599ac43d97389a97a1e44359e0dd->enter($__internal_f49261ba96a7113715daf06d780ed1c44b19599ac43d97389a97a1e44359e0dd_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "bibliography/show.html.twig"));
 
-        $__internal_7da8c23be72a61d9b2a8a7af6cd1a4e703130d83f1a3e66cd8cca591eda0c78f = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_7da8c23be72a61d9b2a8a7af6cd1a4e703130d83f1a3e66cd8cca591eda0c78f->enter($__internal_7da8c23be72a61d9b2a8a7af6cd1a4e703130d83f1a3e66cd8cca591eda0c78f_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "bibliography/show.html.twig"));
+        $__internal_15fd41cf6619f1b61b19cb443b8b0887cca696b02746544959aeb88cffb1cab8 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_15fd41cf6619f1b61b19cb443b8b0887cca696b02746544959aeb88cffb1cab8->enter($__internal_15fd41cf6619f1b61b19cb443b8b0887cca696b02746544959aeb88cffb1cab8_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "bibliography/show.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_4070df70da6faf9601d86efcf11c497c72f1ea1644af4670b3d302035d73b6a2->leave($__internal_4070df70da6faf9601d86efcf11c497c72f1ea1644af4670b3d302035d73b6a2_prof);
+        $__internal_f49261ba96a7113715daf06d780ed1c44b19599ac43d97389a97a1e44359e0dd->leave($__internal_f49261ba96a7113715daf06d780ed1c44b19599ac43d97389a97a1e44359e0dd_prof);
 
         
-        $__internal_7da8c23be72a61d9b2a8a7af6cd1a4e703130d83f1a3e66cd8cca591eda0c78f->leave($__internal_7da8c23be72a61d9b2a8a7af6cd1a4e703130d83f1a3e66cd8cca591eda0c78f_prof);
+        $__internal_15fd41cf6619f1b61b19cb443b8b0887cca696b02746544959aeb88cffb1cab8->leave($__internal_15fd41cf6619f1b61b19cb443b8b0887cca696b02746544959aeb88cffb1cab8_prof);
 
     }
 
     // line 3
     public function block_body($context, array $blocks = array())
     {
-        $__internal_c5218c1b534355cebb101492f30b97d186a316e69334c18537392d993892937b = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_c5218c1b534355cebb101492f30b97d186a316e69334c18537392d993892937b->enter($__internal_c5218c1b534355cebb101492f30b97d186a316e69334c18537392d993892937b_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_65969ecf2a3b04eb963e948737889890e2e8ff450651332454da0eed4af2c15c = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_65969ecf2a3b04eb963e948737889890e2e8ff450651332454da0eed4af2c15c->enter($__internal_65969ecf2a3b04eb963e948737889890e2e8ff450651332454da0eed4af2c15c_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
-        $__internal_4ef85e2b8ce492bcd3c039a3e03e8921845d145712acb0716016a5aae568181b = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_4ef85e2b8ce492bcd3c039a3e03e8921845d145712acb0716016a5aae568181b->enter($__internal_4ef85e2b8ce492bcd3c039a3e03e8921845d145712acb0716016a5aae568181b_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_7f7adfea83671fe844f823f716f2ad1a664c5035faa480fc461f2a8ff2c037dd = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_7f7adfea83671fe844f823f716f2ad1a664c5035faa480fc461f2a8ff2c037dd->enter($__internal_7f7adfea83671fe844f823f716f2ad1a664c5035faa480fc461f2a8ff2c037dd_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
         // line 4
         echo "<section class=\"main_content\">
@@ -86,72 +86,76 @@ class __TwigTemplate_0425d7ce3b00bd20a4c604621574d5fd470e19015a8ab269f1ffe0f5b6a
         echo "</td>
             </tr>
     </table>
-    <h3>References in the ";
+    ";
         // line 29
-        echo twig_escape_filter($this->env, $this->getAttribute(($context["bibliography"] ?? $this->getContext($context, "bibliography")), "bibliographyName", array()), "html", null, true);
-        echo " Bibliography</h3>
+        if ( !twig_test_empty($this->getAttribute(($context["bibliography"] ?? $this->getContext($context, "bibliography")), "bibliographyReferences", array()))) {
+            // line 30
+            echo "    <h3>References in the ";
+            echo twig_escape_filter($this->env, $this->getAttribute(($context["bibliography"] ?? $this->getContext($context, "bibliography")), "bibliographyName", array()), "html", null, true);
+            echo " Bibliography</h3>
     <table>
         <tr>
             <td>";
-        // line 32
-        $context['_parent'] = $context;
-        $context['_seq'] = twig_ensure_traversable($this->getAttribute(($context["bibliography"] ?? $this->getContext($context, "bibliography")), "bibliographyReferences", array()));
-        foreach ($context['_seq'] as $context["_key"] => $context["bibliographyReference"]) {
             // line 33
-            echo "                    <li>
+            $context['_parent'] = $context;
+            $context['_seq'] = twig_ensure_traversable($this->getAttribute(($context["bibliography"] ?? $this->getContext($context, "bibliography")), "bibliographyReferences", array()));
+            foreach ($context['_seq'] as $context["_key"] => $context["bibliographyReference"]) {
+                // line 34
+                echo "                    <li>
                         <a href=\"";
-            // line 34
-            echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("reference_show", array("id" => $this->getAttribute(            // line 35
+                // line 35
+                echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("reference_show", array("id" => $this->getAttribute(                // line 36
 $context["bibliographyReference"], "id", array()))), "html", null, true);
-            // line 36
-            echo "\">
+                // line 37
+                echo "\">
                             ";
-            // line 37
-            echo twig_escape_filter($this->env, $this->getAttribute($context["bibliographyReference"], "nameOfAuthor", array()), "html", null, true);
-            echo "
+                // line 38
+                echo twig_escape_filter($this->env, $this->getAttribute($context["bibliographyReference"], "nameOfAuthor", array()), "html", null, true);
+                echo "
                         </a>
                     </li>
                 ";
-        }
-        $_parent = $context['_parent'];
-        unset($context['_seq'], $context['_iterated'], $context['_key'], $context['bibliographyReference'], $context['_parent'], $context['loop']);
-        $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 40
-        echo "</td>
+            }
+            $_parent = $context['_parent'];
+            unset($context['_seq'], $context['_iterated'], $context['_key'], $context['bibliographyReference'], $context['_parent'], $context['loop']);
+            $context = array_intersect_key($context, $_parent) + $_parent;
+            // line 41
+            echo "</td>
         </tr>
     </table>
+    ";
+        }
+        // line 45
+        echo "    <br>
     <ul>
         <li>
             <a href=\"";
-        // line 45
+        // line 48
         echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("bibliography_index");
         echo "\">Back to the list</a>
         </li>
-        <li>
+        ";
+        // line 50
+        if ($this->env->getExtension('Symfony\Bridge\Twig\Extension\SecurityExtension')->isGranted("ROLE_USER")) {
+            // line 51
+            echo "        <li>
             <a href=\"";
-        // line 48
-        echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("bibliography_edit", array("id" => $this->getAttribute(($context["bibliography"] ?? $this->getContext($context, "bibliography")), "id", array()))), "html", null, true);
-        echo "\">Edit</a>
+            // line 52
+            echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("bibliography_edit", array("id" => $this->getAttribute(($context["bibliography"] ?? $this->getContext($context, "bibliography")), "id", array()))), "html", null, true);
+            echo "\">Edit</a>
         </li>
-        <li>
-            ";
-        // line 51
-        echo         $this->env->getRuntime('Symfony\Bridge\Twig\Form\TwigRenderer')->renderBlock(($context["delete_form"] ?? $this->getContext($context, "delete_form")), 'form_start');
-        echo "
-                <input type=\"submit\" value=\"Delete\">
-            ";
-        // line 53
-        echo         $this->env->getRuntime('Symfony\Bridge\Twig\Form\TwigRenderer')->renderBlock(($context["delete_form"] ?? $this->getContext($context, "delete_form")), 'form_end');
-        echo "
-        </li>
-    </ul>
+        ";
+        }
+        // line 55
+        echo "    </ul>
+    <br>
 </section>
 ";
         
-        $__internal_4ef85e2b8ce492bcd3c039a3e03e8921845d145712acb0716016a5aae568181b->leave($__internal_4ef85e2b8ce492bcd3c039a3e03e8921845d145712acb0716016a5aae568181b_prof);
+        $__internal_7f7adfea83671fe844f823f716f2ad1a664c5035faa480fc461f2a8ff2c037dd->leave($__internal_7f7adfea83671fe844f823f716f2ad1a664c5035faa480fc461f2a8ff2c037dd_prof);
 
         
-        $__internal_c5218c1b534355cebb101492f30b97d186a316e69334c18537392d993892937b->leave($__internal_c5218c1b534355cebb101492f30b97d186a316e69334c18537392d993892937b_prof);
+        $__internal_65969ecf2a3b04eb963e948737889890e2e8ff450651332454da0eed4af2c15c->leave($__internal_65969ecf2a3b04eb963e948737889890e2e8ff450651332454da0eed4af2c15c_prof);
 
     }
 
@@ -167,7 +171,7 @@ $context["bibliographyReference"], "id", array()))), "html", null, true);
 
     public function getDebugInfo()
     {
-        return array (  144 => 53,  139 => 51,  133 => 48,  127 => 45,  120 => 40,  110 => 37,  107 => 36,  105 => 35,  104 => 34,  101 => 33,  97 => 32,  91 => 29,  85 => 26,  78 => 22,  71 => 18,  64 => 14,  57 => 10,  49 => 4,  40 => 3,  11 => 1,);
+        return array (  150 => 55,  144 => 52,  141 => 51,  139 => 50,  134 => 48,  129 => 45,  123 => 41,  113 => 38,  110 => 37,  108 => 36,  107 => 35,  104 => 34,  100 => 33,  93 => 30,  91 => 29,  85 => 26,  78 => 22,  71 => 18,  64 => 14,  57 => 10,  49 => 4,  40 => 3,  11 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -208,6 +212,7 @@ $context["bibliographyReference"], "id", array()))), "html", null, true);
                 <td>{{ bibliography.user.email }}</td>
             </tr>
     </table>
+    {% if (bibliography.bibliographyReferences) is not empty %}
     <h3>References in the {{ bibliography.bibliographyName }} Bibliography</h3>
     <table>
         <tr>
@@ -222,19 +227,19 @@ $context["bibliographyReference"], "id", array()))), "html", null, true);
                 {% endfor %}</td>
         </tr>
     </table>
+    {% endif %}
+    <br>
     <ul>
         <li>
             <a href=\"{{ path('bibliography_index') }}\">Back to the list</a>
         </li>
+        {% if (is_granted('ROLE_USER')) %}
         <li>
             <a href=\"{{ path('bibliography_edit', { 'id': bibliography.id }) }}\">Edit</a>
         </li>
-        <li>
-            {{ form_start(delete_form) }}
-                <input type=\"submit\" value=\"Delete\">
-            {{ form_end(delete_form) }}
-        </li>
+        {% endif %}
     </ul>
+    <br>
 </section>
 {% endblock %}
 ", "bibliography/show.html.twig", "C:\\laragon\\www\\web3_project\\app\\Resources\\views\\bibliography\\show.html.twig");

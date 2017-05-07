@@ -33,14 +33,14 @@ class Tag
     /**
      * @var string
      *
-     * @ORM\Column(name="status", type="string", length=255)
+     * @ORM\Column(name="status", type="string", length=255, nullable=true)
      */
     private $status;
 
     /**
      * @var int
      *
-     * @ORM\Column(name="noOfVotes", type="integer")
+     * @ORM\Column(name="noOfVotes", type="integer", nullable=true)
      */
     private $noOfVotes;
 

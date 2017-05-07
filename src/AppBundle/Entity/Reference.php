@@ -69,7 +69,7 @@ class Reference
     /**
      * @var string
      *
-     * @ORM\Column(name="textSummary", type="text")
+     * @ORM\Column(name="textSummary", type="text", nullable=true)
      */
     private $textSummary;
 
@@ -81,7 +81,7 @@ class Reference
     /**
      * @var string
      *
-     * @ORM\Column(name="status", type="string", length=255)
+     * @ORM\Column(name="status", type="string", length=255, nullable=true)
      */
     private $status;
 

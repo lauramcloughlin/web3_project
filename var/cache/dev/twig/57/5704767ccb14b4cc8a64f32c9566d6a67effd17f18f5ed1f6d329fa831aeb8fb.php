@@ -21,29 +21,29 @@ class __TwigTemplate_ccf6a922dd82d50237964d7b58182eff3db952dd650f5567309e869de33
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_e1c95f620b49f8a561d97231ded83b6ccce7a489178be0600f3998cd71765257 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_e1c95f620b49f8a561d97231ded83b6ccce7a489178be0600f3998cd71765257->enter($__internal_e1c95f620b49f8a561d97231ded83b6ccce7a489178be0600f3998cd71765257_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "tag/edit.html.twig"));
+        $__internal_d1445abab4f54e41bb52f25f0077966ee34a8269ddb0ddff98077932b90e76aa = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_d1445abab4f54e41bb52f25f0077966ee34a8269ddb0ddff98077932b90e76aa->enter($__internal_d1445abab4f54e41bb52f25f0077966ee34a8269ddb0ddff98077932b90e76aa_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "tag/edit.html.twig"));
 
-        $__internal_19c4875e4a2077426abe30f6f2088b1731df3f91922f12f13ce98281b0ba8e31 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_19c4875e4a2077426abe30f6f2088b1731df3f91922f12f13ce98281b0ba8e31->enter($__internal_19c4875e4a2077426abe30f6f2088b1731df3f91922f12f13ce98281b0ba8e31_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "tag/edit.html.twig"));
+        $__internal_1950dd3b0e7f3de7a26c2e4ee68ecb7ede6e8338dba23fdee8f42c9131468d8a = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_1950dd3b0e7f3de7a26c2e4ee68ecb7ede6e8338dba23fdee8f42c9131468d8a->enter($__internal_1950dd3b0e7f3de7a26c2e4ee68ecb7ede6e8338dba23fdee8f42c9131468d8a_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "tag/edit.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_e1c95f620b49f8a561d97231ded83b6ccce7a489178be0600f3998cd71765257->leave($__internal_e1c95f620b49f8a561d97231ded83b6ccce7a489178be0600f3998cd71765257_prof);
+        $__internal_d1445abab4f54e41bb52f25f0077966ee34a8269ddb0ddff98077932b90e76aa->leave($__internal_d1445abab4f54e41bb52f25f0077966ee34a8269ddb0ddff98077932b90e76aa_prof);
 
         
-        $__internal_19c4875e4a2077426abe30f6f2088b1731df3f91922f12f13ce98281b0ba8e31->leave($__internal_19c4875e4a2077426abe30f6f2088b1731df3f91922f12f13ce98281b0ba8e31_prof);
+        $__internal_1950dd3b0e7f3de7a26c2e4ee68ecb7ede6e8338dba23fdee8f42c9131468d8a->leave($__internal_1950dd3b0e7f3de7a26c2e4ee68ecb7ede6e8338dba23fdee8f42c9131468d8a_prof);
 
     }
 
     // line 3
     public function block_body($context, array $blocks = array())
     {
-        $__internal_d468f277cd448e4d4b34b87350b1e634de86e55cb7c65a323bb6c0708563dd2e = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_d468f277cd448e4d4b34b87350b1e634de86e55cb7c65a323bb6c0708563dd2e->enter($__internal_d468f277cd448e4d4b34b87350b1e634de86e55cb7c65a323bb6c0708563dd2e_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_a6f3979f0258df931ac65fac37e9f96c39b30e0689f56ad2bcc9356d6e3e9feb = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_a6f3979f0258df931ac65fac37e9f96c39b30e0689f56ad2bcc9356d6e3e9feb->enter($__internal_a6f3979f0258df931ac65fac37e9f96c39b30e0689f56ad2bcc9356d6e3e9feb_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
-        $__internal_f56d6eabfe33349efa16739e2d84d3fe7fdd2cd88c3b308a9dbc2533eb1fd710 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_f56d6eabfe33349efa16739e2d84d3fe7fdd2cd88c3b308a9dbc2533eb1fd710->enter($__internal_f56d6eabfe33349efa16739e2d84d3fe7fdd2cd88c3b308a9dbc2533eb1fd710_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_714a922d3886a72c1a8dd61087575f157cc5e769c317797890e7f70b0d3bc2f8 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_714a922d3886a72c1a8dd61087575f157cc5e769c317797890e7f70b0d3bc2f8->enter($__internal_714a922d3886a72c1a8dd61087575f157cc5e769c317797890e7f70b0d3bc2f8_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
         // line 4
         echo "<section class=\"main_content\">
@@ -67,45 +67,28 @@ class __TwigTemplate_ccf6a922dd82d50237964d7b58182eff3db952dd650f5567309e869de33
         echo "</td>
         </tr>
         <tr>
-            <td> ";
-        // line 16
-        echo $this->env->getRuntime('Symfony\Bridge\Twig\Form\TwigRenderer')->searchAndRenderBlock($this->getAttribute(($context["form"] ?? $this->getContext($context, "form")), "noOfVotes", array()), 'row');
-        echo "</td>
-        </tr>
-        <tr>
             <td>  <input type=\"submit\" value=\"Update\" /></td>
         </tr>
         ";
-        // line 21
+        // line 18
         echo         $this->env->getRuntime('Symfony\Bridge\Twig\Form\TwigRenderer')->renderBlock(($context["form"] ?? $this->getContext($context, "form")), 'form_end');
         echo "
     </table>
     <ul>
         <li>
             <a href=\"";
-        // line 25
+        // line 22
         echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("tag_index");
         echo "\">Back to the list</a>
-        </li>
-        <li>
-            ";
-        // line 28
-        echo         $this->env->getRuntime('Symfony\Bridge\Twig\Form\TwigRenderer')->renderBlock(($context["delete_form"] ?? $this->getContext($context, "delete_form")), 'form_start');
-        echo "
-                <input type=\"submit\" value=\"Delete\">
-            ";
-        // line 30
-        echo         $this->env->getRuntime('Symfony\Bridge\Twig\Form\TwigRenderer')->renderBlock(($context["delete_form"] ?? $this->getContext($context, "delete_form")), 'form_end');
-        echo "
         </li>
     </ul>
 </section>
 ";
         
-        $__internal_f56d6eabfe33349efa16739e2d84d3fe7fdd2cd88c3b308a9dbc2533eb1fd710->leave($__internal_f56d6eabfe33349efa16739e2d84d3fe7fdd2cd88c3b308a9dbc2533eb1fd710_prof);
+        $__internal_714a922d3886a72c1a8dd61087575f157cc5e769c317797890e7f70b0d3bc2f8->leave($__internal_714a922d3886a72c1a8dd61087575f157cc5e769c317797890e7f70b0d3bc2f8_prof);
 
         
-        $__internal_d468f277cd448e4d4b34b87350b1e634de86e55cb7c65a323bb6c0708563dd2e->leave($__internal_d468f277cd448e4d4b34b87350b1e634de86e55cb7c65a323bb6c0708563dd2e_prof);
+        $__internal_a6f3979f0258df931ac65fac37e9f96c39b30e0689f56ad2bcc9356d6e3e9feb->leave($__internal_a6f3979f0258df931ac65fac37e9f96c39b30e0689f56ad2bcc9356d6e3e9feb_prof);
 
     }
 
@@ -121,7 +104,7 @@ class __TwigTemplate_ccf6a922dd82d50237964d7b58182eff3db952dd650f5567309e869de33
 
     public function getDebugInfo()
     {
-        return array (  98 => 30,  93 => 28,  87 => 25,  80 => 21,  72 => 16,  66 => 13,  60 => 10,  55 => 8,  49 => 4,  40 => 3,  11 => 1,);
+        return array (  81 => 22,  74 => 18,  66 => 13,  60 => 10,  55 => 8,  49 => 4,  40 => 3,  11 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -149,9 +132,6 @@ class __TwigTemplate_ccf6a922dd82d50237964d7b58182eff3db952dd650f5567309e869de33
             <td> {{ form_row(form.status) }}</td>
         </tr>
         <tr>
-            <td> {{ form_row(form.noOfVotes) }}</td>
-        </tr>
-        <tr>
             <td>  <input type=\"submit\" value=\"Update\" /></td>
         </tr>
         {{ form_end(form) }}
@@ -159,11 +139,6 @@ class __TwigTemplate_ccf6a922dd82d50237964d7b58182eff3db952dd650f5567309e869de33
     <ul>
         <li>
             <a href=\"{{ path('tag_index') }}\">Back to the list</a>
-        </li>
-        <li>
-            {{ form_start(delete_form) }}
-                <input type=\"submit\" value=\"Delete\">
-            {{ form_end(delete_form) }}
         </li>
     </ul>
 </section>

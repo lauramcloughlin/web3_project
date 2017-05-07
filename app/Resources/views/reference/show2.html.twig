@@ -1,0 +1,88 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+<section class="main_content">
+    <h2>Reference</h2>
+
+    <table>
+            <tr>
+                <th>Id</th>
+                <td>{{ reference.id }}</td>
+            </tr>
+            <tr>
+                <th>Name of Author</th>
+                <td>{{ reference.nameOfAuthor }}</td>
+            </tr>
+            <tr>
+                <th>Year Published</th>
+                <td>{{ reference.yearPublished }}</td>
+            </tr>
+            <tr>
+                <th>Title of Reference</th>
+                <td>{{ reference.titleOfReference }}</td>
+            </tr>
+            <tr>
+                <th>City Published</th>
+                <td>{{ reference.cityPublished }}</td>
+            </tr>
+            <tr>
+                <th>Publisher</th>
+                <td>{{ reference.publisher }}</td>
+            </tr>
+            <tr>
+                <th>Pages Used</th>
+                <td>{{ reference.pagesUsed }}</td>
+            </tr>
+            <tr>
+                <th>Text Summary</th>
+                <td>{{ reference.textSummary }}</td>
+            </tr>
+             <tr>
+                <th>Status</th>
+                <td>{{ reference.status }}</td>
+            </tr>
+            <tr>
+                <th>Reference added by</th>
+                <td>{{ reference.user.email }}</td>
+            </tr>
+
+            <tr>
+                <th>Date Created</th>
+                <td>{{ reference.dateCreated|date('Y-m-d') }}</td>
+            </tr>
+            <tr>
+                <th>Date Last Edited</th>
+                <td> {{ reference.dateLastEdited|date('Y-m-d') }}</td>
+            </tr>
+        <tr>
+            <th>Bibliographies</th>
+            <td> <ul>
+                    {% for referenceBibliography in reference.referenceBibliographies %}
+                        <li>
+
+                                {{ referenceBibliography.bibliographyName }}
+
+                        </li>
+                    {% endfor %}
+                </ul></td>
+        </tr>
+            <tr>
+                <th>Tags</th>
+                <td> <ul>
+                        {% for referenceTag in reference.referenceTags %}
+                            <li>
+                                {{ referenceTag.tagName }}
+                              </li>
+                        {% endfor %}
+                    </ul></td>
+            </tr>
+    </table>
+    <br>
+    <ul>
+        <li>
+            <a href="{{ path('reference_index') }}">Back to the list</a>
+        </li>
+    </ul>
+    <br>
+</section>
+{% endblock %}

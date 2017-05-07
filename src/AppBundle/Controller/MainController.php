@@ -19,7 +19,7 @@ class MainController extends Controller
     {
 
         $argsArray = [
-            'name' => 'Bibliography Home Page'
+            'name' => ''
         ];
 
         return $this->render('/index.html.twig', $argsArray);

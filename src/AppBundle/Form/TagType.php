@@ -5,6 +5,7 @@ namespace AppBundle\Form;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
+use Symfony\Component\Form\Extension\Core\Type\ChoiceType;
 
 class TagType extends AbstractType
 {
@@ -21,8 +22,7 @@ class TagType extends AbstractType
                     'Accepted' => 'Accepted',
                     'Rejected' => 'Rejected',
                 ]
-            ])
-            ->add('noOfVotes');
+            ]);
     }
     
     /**

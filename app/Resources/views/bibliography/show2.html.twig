@@ -1,0 +1,54 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+<section class="main_content">
+    <h2>Bibliography</h2>
+
+    <table>
+            <tr>
+                <th>Id</th>
+                <td>{{ bibliography.id }}</td>
+            </tr>
+            <tr>
+                <th>Bibliography Name</th>
+                <td>{{ bibliography.bibliographyName }}</td>
+            </tr>
+            <tr>
+                <th>Text Summary</th>
+                <td>{{ bibliography.textSummary }}</td>
+            </tr>
+            <tr>
+                <th>Status</th>
+                <td>{{ bibliography.status }}</td>
+            </tr>
+            <tr>
+                <th>User</th>
+                <td>{{ bibliography.user.email }}</td>
+            </tr>
+    </table>
+    {% if (bibliography.bibliographyReferences) is not empty %}
+    <h3>References in the {{ bibliography.bibliographyName }} Bibliography</h3>
+    <table>
+        <tr>
+            <td>{% for bibliographyReference in bibliography.bibliographyReferences %}
+                    <li>
+                            {{ bibliographyReference.nameOfAuthor }}, {{ bibliographyReference.titleOfReference }}
+                    </li>
+                {% endfor %}</td>
+        </tr>
+    </table>
+    {% endif %}
+    <br>
+    <ul>
+        <li>
+            <a href="{{ path('bibliography_index') }}">Back to the list</a>
+        </li>
+        {% if (is_granted('ROLE_USER')) %}
+        <li>
+            <a href="{{ path('bibliography_edit', { 'id': bibliography.id }) }}">Edit</a>
+        </li>
+        {% endif %}
+    </ul>
+    <br>
+</section>
+{% endblock %}

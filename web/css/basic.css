@@ -59,11 +59,12 @@ tr, td{
 
 
 ul{
-    margin: 1rem;
+    margin: 0rem;
     padding: 0rem;
 }
 
 li{
-    margin: 1rem;
-    padding: 1rem;
+    /*list-style-type: none;*/
+    margin: 0rem;
+    padding: 0rem;
 }
