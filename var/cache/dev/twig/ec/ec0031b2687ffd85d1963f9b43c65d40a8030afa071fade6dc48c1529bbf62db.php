@@ -21,74 +21,117 @@ class __TwigTemplate_413509ab46cfea38d4692de1582e39363b212801878f5a92ec764c42c03
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_ceb0d3b126625b7f22771f41f515ff6c360a2985a82049bce211dcb420a33776 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_ceb0d3b126625b7f22771f41f515ff6c360a2985a82049bce211dcb420a33776->enter($__internal_ceb0d3b126625b7f22771f41f515ff6c360a2985a82049bce211dcb420a33776_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "reference/edit.html.twig"));
+        $__internal_cd5729fbf33cc1ee90de462c887f1c9acdf34f8ae333f6b5fec0be3008dc9284 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_cd5729fbf33cc1ee90de462c887f1c9acdf34f8ae333f6b5fec0be3008dc9284->enter($__internal_cd5729fbf33cc1ee90de462c887f1c9acdf34f8ae333f6b5fec0be3008dc9284_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "reference/edit.html.twig"));
 
-        $__internal_0adf38b8ea6e5f0aeef46795cedf373ef5cccf838c7209828b42bff8e7af704f = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_0adf38b8ea6e5f0aeef46795cedf373ef5cccf838c7209828b42bff8e7af704f->enter($__internal_0adf38b8ea6e5f0aeef46795cedf373ef5cccf838c7209828b42bff8e7af704f_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "reference/edit.html.twig"));
+        $__internal_120b685742ec99f89c49cca793bb746ba9d8a01316f497f5a2a669c73fd8bd0e = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_120b685742ec99f89c49cca793bb746ba9d8a01316f497f5a2a669c73fd8bd0e->enter($__internal_120b685742ec99f89c49cca793bb746ba9d8a01316f497f5a2a669c73fd8bd0e_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "reference/edit.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_ceb0d3b126625b7f22771f41f515ff6c360a2985a82049bce211dcb420a33776->leave($__internal_ceb0d3b126625b7f22771f41f515ff6c360a2985a82049bce211dcb420a33776_prof);
+        $__internal_cd5729fbf33cc1ee90de462c887f1c9acdf34f8ae333f6b5fec0be3008dc9284->leave($__internal_cd5729fbf33cc1ee90de462c887f1c9acdf34f8ae333f6b5fec0be3008dc9284_prof);
 
         
-        $__internal_0adf38b8ea6e5f0aeef46795cedf373ef5cccf838c7209828b42bff8e7af704f->leave($__internal_0adf38b8ea6e5f0aeef46795cedf373ef5cccf838c7209828b42bff8e7af704f_prof);
+        $__internal_120b685742ec99f89c49cca793bb746ba9d8a01316f497f5a2a669c73fd8bd0e->leave($__internal_120b685742ec99f89c49cca793bb746ba9d8a01316f497f5a2a669c73fd8bd0e_prof);
 
     }
 
     // line 3
     public function block_body($context, array $blocks = array())
     {
-        $__internal_ea6ad61e26ec76048a476ce2746826492929f24b0c49486cb9a56ede049aac7b = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_ea6ad61e26ec76048a476ce2746826492929f24b0c49486cb9a56ede049aac7b->enter($__internal_ea6ad61e26ec76048a476ce2746826492929f24b0c49486cb9a56ede049aac7b_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_34b66afff718fba0de422b68386ac237974235daf62cc3d223dd93e6ea4734aa = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_34b66afff718fba0de422b68386ac237974235daf62cc3d223dd93e6ea4734aa->enter($__internal_34b66afff718fba0de422b68386ac237974235daf62cc3d223dd93e6ea4734aa_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
-        $__internal_d191ab1ed6f91a3e6b93651cf3ccf1b3dee8b51ae3f01f0658dfbe123c45585b = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_d191ab1ed6f91a3e6b93651cf3ccf1b3dee8b51ae3f01f0658dfbe123c45585b->enter($__internal_d191ab1ed6f91a3e6b93651cf3ccf1b3dee8b51ae3f01f0658dfbe123c45585b_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_50eacae819c379d4695f72181ffb7b35332e07964447c7e15a2b0a2127576143 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_50eacae819c379d4695f72181ffb7b35332e07964447c7e15a2b0a2127576143->enter($__internal_50eacae819c379d4695f72181ffb7b35332e07964447c7e15a2b0a2127576143_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
         // line 4
         echo "<section class=\"main_content\">
-    <h2>Reference edit</h2>
+    <h2>Edit Reference</h2>
 
-    ";
-        // line 7
-        echo         $this->env->getRuntime('Symfony\Bridge\Twig\Form\TwigRenderer')->renderBlock(($context["edit_form"] ?? $this->getContext($context, "edit_form")), 'form_start');
-        echo "
+    <table>
         ";
         // line 8
-        echo $this->env->getRuntime('Symfony\Bridge\Twig\Form\TwigRenderer')->searchAndRenderBlock(($context["edit_form"] ?? $this->getContext($context, "edit_form")), 'widget');
-        echo "
-        <input type=\"submit\" value=\"Edit\" />
-    ";
-        // line 10
-        echo         $this->env->getRuntime('Symfony\Bridge\Twig\Form\TwigRenderer')->renderBlock(($context["edit_form"] ?? $this->getContext($context, "edit_form")), 'form_end');
+        echo         $this->env->getRuntime('Symfony\Bridge\Twig\Form\TwigRenderer')->renderBlock(($context["form"] ?? $this->getContext($context, "form")), 'form_start');
         echo "
 
-    <ul>
-        <li>
-            <a href=\"";
+        <tr>
+            <td> ";
+        // line 11
+        echo $this->env->getRuntime('Symfony\Bridge\Twig\Form\TwigRenderer')->searchAndRenderBlock($this->getAttribute(($context["form"] ?? $this->getContext($context, "form")), "nameOfAuthor", array()), 'row');
+        echo "</td>
+        </tr>
+        <tr>
+            <td> ";
         // line 14
-        echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("reference_index");
-        echo "\">Back to the list</a>
-        </li>
-        <li>
-            ";
+        echo $this->env->getRuntime('Symfony\Bridge\Twig\Form\TwigRenderer')->searchAndRenderBlock($this->getAttribute(($context["form"] ?? $this->getContext($context, "form")), "yearPublished", array()), 'row');
+        echo "</td>
+        </tr>
+        <tr>
+            <td> ";
         // line 17
-        echo         $this->env->getRuntime('Symfony\Bridge\Twig\Form\TwigRenderer')->renderBlock(($context["delete_form"] ?? $this->getContext($context, "delete_form")), 'form_start');
+        echo $this->env->getRuntime('Symfony\Bridge\Twig\Form\TwigRenderer')->searchAndRenderBlock($this->getAttribute(($context["form"] ?? $this->getContext($context, "form")), "titleOfReference", array()), 'row');
+        echo "</td>
+        </tr>
+        <tr>
+            <td> ";
+        // line 20
+        echo $this->env->getRuntime('Symfony\Bridge\Twig\Form\TwigRenderer')->searchAndRenderBlock($this->getAttribute(($context["form"] ?? $this->getContext($context, "form")), "cityPublished", array()), 'row');
+        echo "</td>
+        </tr>
+        <tr>
+            <td> ";
+        // line 23
+        echo $this->env->getRuntime('Symfony\Bridge\Twig\Form\TwigRenderer')->searchAndRenderBlock($this->getAttribute(($context["form"] ?? $this->getContext($context, "form")), "publisher", array()), 'row');
+        echo "</td>
+        </tr>
+        <tr>
+            <td> ";
+        // line 26
+        echo $this->env->getRuntime('Symfony\Bridge\Twig\Form\TwigRenderer')->searchAndRenderBlock($this->getAttribute(($context["form"] ?? $this->getContext($context, "form")), "pagesUsed", array()), 'row');
+        echo "</td>
+        </tr>
+        <tr>
+            <td> ";
+        // line 29
+        echo $this->env->getRuntime('Symfony\Bridge\Twig\Form\TwigRenderer')->searchAndRenderBlock($this->getAttribute(($context["form"] ?? $this->getContext($context, "form")), "textSummary", array()), 'row');
+        echo "</td>
+        </tr>
+        <tr>
+            <td> ";
+        // line 32
+        echo $this->env->getRuntime('Symfony\Bridge\Twig\Form\TwigRenderer')->searchAndRenderBlock($this->getAttribute(($context["form"] ?? $this->getContext($context, "form")), "status", array()), 'row');
+        echo "</td>
+        </tr>
+        <tr>
+            <td> ";
+        // line 35
+        echo $this->env->getRuntime('Symfony\Bridge\Twig\Form\TwigRenderer')->searchAndRenderBlock($this->getAttribute(($context["form"] ?? $this->getContext($context, "form")), "referenceBibliographies", array()), 'row');
+        echo "</td>
+        </tr>
+        <tr>
+            <td> ";
+        // line 38
+        echo $this->env->getRuntime('Symfony\Bridge\Twig\Form\TwigRenderer')->searchAndRenderBlock($this->getAttribute(($context["form"] ?? $this->getContext($context, "form")), "referenceTags", array()), 'row');
+        echo "</td>
+        </tr>
+
+        <tr>
+            <td>  <input type=\"submit\" value=\"Update\" /></td>
+        </tr>
+
+        ";
+        // line 45
+        echo         $this->env->getRuntime('Symfony\Bridge\Twig\Form\TwigRenderer')->renderBlock(($context["form"] ?? $this->getContext($context, "form")), 'form_end');
         echo "
-                <input type=\"submit\" value=\"Delete\">
-            ";
-        // line 19
-        echo         $this->env->getRuntime('Symfony\Bridge\Twig\Form\TwigRenderer')->renderBlock(($context["delete_form"] ?? $this->getContext($context, "delete_form")), 'form_end');
-        echo "
-        </li>
-    </ul>
+    </table>
 </section>
 ";
         
-        $__internal_d191ab1ed6f91a3e6b93651cf3ccf1b3dee8b51ae3f01f0658dfbe123c45585b->leave($__internal_d191ab1ed6f91a3e6b93651cf3ccf1b3dee8b51ae3f01f0658dfbe123c45585b_prof);
+        $__internal_50eacae819c379d4695f72181ffb7b35332e07964447c7e15a2b0a2127576143->leave($__internal_50eacae819c379d4695f72181ffb7b35332e07964447c7e15a2b0a2127576143_prof);
 
         
-        $__internal_ea6ad61e26ec76048a476ce2746826492929f24b0c49486cb9a56ede049aac7b->leave($__internal_ea6ad61e26ec76048a476ce2746826492929f24b0c49486cb9a56ede049aac7b_prof);
+        $__internal_34b66afff718fba0de422b68386ac237974235daf62cc3d223dd93e6ea4734aa->leave($__internal_34b66afff718fba0de422b68386ac237974235daf62cc3d223dd93e6ea4734aa_prof);
 
     }
 
@@ -104,7 +147,7 @@ class __TwigTemplate_413509ab46cfea38d4692de1582e39363b212801878f5a92ec764c42c03
 
     public function getDebugInfo()
     {
-        return array (  81 => 19,  76 => 17,  70 => 14,  63 => 10,  58 => 8,  54 => 7,  49 => 4,  40 => 3,  11 => 1,);
+        return array (  125 => 45,  115 => 38,  109 => 35,  103 => 32,  97 => 29,  91 => 26,  85 => 23,  79 => 20,  73 => 17,  67 => 14,  61 => 11,  55 => 8,  49 => 4,  40 => 3,  11 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -121,23 +164,48 @@ class __TwigTemplate_413509ab46cfea38d4692de1582e39363b212801878f5a92ec764c42c03
 
 {% block body %}
 <section class=\"main_content\">
-    <h2>Reference edit</h2>
+    <h2>Edit Reference</h2>
 
-    {{ form_start(edit_form) }}
-        {{ form_widget(edit_form) }}
-        <input type=\"submit\" value=\"Edit\" />
-    {{ form_end(edit_form) }}
+    <table>
+        {{ form_start(form) }}
 
-    <ul>
-        <li>
-            <a href=\"{{ path('reference_index') }}\">Back to the list</a>
-        </li>
-        <li>
-            {{ form_start(delete_form) }}
-                <input type=\"submit\" value=\"Delete\">
-            {{ form_end(delete_form) }}
-        </li>
-    </ul>
+        <tr>
+            <td> {{ form_row(form.nameOfAuthor) }}</td>
+        </tr>
+        <tr>
+            <td> {{ form_row(form.yearPublished) }}</td>
+        </tr>
+        <tr>
+            <td> {{ form_row(form.titleOfReference) }}</td>
+        </tr>
+        <tr>
+            <td> {{ form_row(form.cityPublished) }}</td>
+        </tr>
+        <tr>
+            <td> {{ form_row(form.publisher) }}</td>
+        </tr>
+        <tr>
+            <td> {{ form_row(form.pagesUsed) }}</td>
+        </tr>
+        <tr>
+            <td> {{ form_row(form.textSummary) }}</td>
+        </tr>
+        <tr>
+            <td> {{ form_row(form.status) }}</td>
+        </tr>
+        <tr>
+            <td> {{ form_row(form.referenceBibliographies) }}</td>
+        </tr>
+        <tr>
+            <td> {{ form_row(form.referenceTags) }}</td>
+        </tr>
+
+        <tr>
+            <td>  <input type=\"submit\" value=\"Update\" /></td>
+        </tr>
+
+        {{ form_end(form) }}
+    </table>
 </section>
 {% endblock %}
 ", "reference/edit.html.twig", "C:\\laragon\\www\\web3_project\\app\\Resources\\views\\reference\\edit.html.twig");

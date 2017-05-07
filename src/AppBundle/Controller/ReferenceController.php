@@ -2,10 +2,17 @@
 
 namespace AppBundle\Controller;
 
+
 use AppBundle\Entity\Reference;
+use AppBundle\Entity\Bibliography;
+use AppBundle\Entity\User;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Method;
-use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;use Symfony\Component\HttpFoundation\Request;
+use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
+use Symfony\Component\HttpFoundation\Request;
+use Symfony\Component\HttpFoundation\JsonResponse;
+use Symfony\Component\HttpFoundation\Response;
+
 
 /**
  * Reference controller.
@@ -39,12 +46,21 @@ class ReferenceController extends Controller
      */
     public function newAction(Request $request)
     {
+        $this->denyAccessUnlessGranted('ROLE_USER');
+
         $reference = new Reference();
         $form = $this->createForm('AppBundle\Form\ReferenceType', $reference);
+
         $form->handleRequest($request);
 
         if ($form->isSubmitted() && $form->isValid()) {
+
+            $user = new User();
+            $user = $this->get('security.token_storage')->getToken()->getUser();
+            $reference->setUser($user);
+
             $em = $this->getDoctrine()->getManager();
+
             $em->persist($reference);
             $em->flush();
 
@@ -81,6 +97,8 @@ class ReferenceController extends Controller
      */
     public function editAction(Request $request, Reference $reference)
     {
+        $this->denyAccessUnlessGranted('ROLE_USER');
+
         $deleteForm = $this->createDeleteForm($reference);
         $editForm = $this->createForm('AppBundle\Form\ReferenceType', $reference);
         $editForm->handleRequest($request);
@@ -88,12 +106,12 @@ class ReferenceController extends Controller
         if ($editForm->isSubmitted() && $editForm->isValid()) {
             $this->getDoctrine()->getManager()->flush();
 
-            return $this->redirectToRoute('reference_edit', array('id' => $reference->getId()));
+            return $this->redirectToRoute('reference_show', array('id' => $reference->getId()));
         }
 
         return $this->render('reference/edit.html.twig', array(
             'reference' => $reference,
-            'edit_form' => $editForm->createView(),
+            'form' => $editForm->createView(),
             'delete_form' => $deleteForm->createView(),
         ));
     }
@@ -106,6 +124,8 @@ class ReferenceController extends Controller
      */
     public function deleteAction(Request $request, Reference $reference)
     {
+        $this->denyAccessUnlessGranted('ROLE_USER');
+
         $form = $this->createDeleteForm($reference);
         $form->handleRequest($request);
 

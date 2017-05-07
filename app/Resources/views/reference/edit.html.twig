@@ -2,22 +2,47 @@
 
 {% block body %}
 <section class="main_content">
-    <h2>Reference edit</h2>
+    <h2>Edit Reference</h2>
 
-    {{ form_start(edit_form) }}
-        {{ form_widget(edit_form) }}
-        <input type="submit" value="Edit" />
-    {{ form_end(edit_form) }}
+    <table>
+        {{ form_start(form) }}
 
-    <ul>
-        <li>
-            <a href="{{ path('reference_index') }}">Back to the list</a>
-        </li>
-        <li>
-            {{ form_start(delete_form) }}
-                <input type="submit" value="Delete">
-            {{ form_end(delete_form) }}
-        </li>
-    </ul>
+        <tr>
+            <td> {{ form_row(form.nameOfAuthor) }}</td>
+        </tr>
+        <tr>
+            <td> {{ form_row(form.yearPublished) }}</td>
+        </tr>
+        <tr>
+            <td> {{ form_row(form.titleOfReference) }}</td>
+        </tr>
+        <tr>
+            <td> {{ form_row(form.cityPublished) }}</td>
+        </tr>
+        <tr>
+            <td> {{ form_row(form.publisher) }}</td>
+        </tr>
+        <tr>
+            <td> {{ form_row(form.pagesUsed) }}</td>
+        </tr>
+        <tr>
+            <td> {{ form_row(form.textSummary) }}</td>
+        </tr>
+        <tr>
+            <td> {{ form_row(form.status) }}</td>
+        </tr>
+        <tr>
+            <td> {{ form_row(form.referenceBibliographies) }}</td>
+        </tr>
+        <tr>
+            <td> {{ form_row(form.referenceTags) }}</td>
+        </tr>
+
+        <tr>
+            <td>  <input type="submit" value="Update" /></td>
+        </tr>
+
+        {{ form_end(form) }}
+    </table>
 </section>
 {% endblock %}

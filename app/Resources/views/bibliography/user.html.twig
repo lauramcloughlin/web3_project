@@ -1,0 +1,39 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+<section class="main_content">
+    <h2>Bibliographies &nbsp;&nbsp;<a href="{{ path('bibliography_new') }}">+ Create a new bibliography</a></h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Bibliography Name</th>
+                <th>Text Summary</th>
+                <th>Status</th>
+                <th>User</th>
+                <th>View</th>
+                <th>Update</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for bibliography in bibliographies %}
+            <tr>
+                <td><a href="{{ path('bibliography_show', { 'id': bibliography.id }) }}">{{ bibliography.id }}</a></td>
+                <td>{{ bibliography.bibliographyName }}</td>
+                <td>{{ bibliography.textSummary }}</td>
+                <td>{{ bibliography.status }}</td>
+                <td>{{ bibliography.user.email }}</td>
+                <td>
+                    <a href="{{ path('bibliography_show', { 'id': bibliography.id }) }}">view</a>
+                </td>
+                <td>
+                    <a href="{{ path('bibliography_edit', { 'id': bibliography.id }) }}">edit</a>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+</section>
+{% endblock %}

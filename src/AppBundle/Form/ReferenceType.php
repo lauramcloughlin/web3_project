@@ -2,9 +2,17 @@
 
 namespace AppBundle\Form;
 
+use AppBundle\Entity\Bibliography;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
+use AppBundle\Entity\Tag;
+use Symfony\Bridge\Doctrine\Form\Type\EntityType;
+use Symfony\Component\Form\FormInterface;
+use Symfony\Component\Form\FormView;
+use Symfony\Component\Form\Extension\Core\Type\ChoiceType;
+use Symfony\Component\Form\Extension\Core\Type\DateType;
+
 
 class ReferenceType extends AbstractType
 {
@@ -13,7 +21,32 @@ class ReferenceType extends AbstractType
      */
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
-        $builder->add('nameOfAuthor')->add('yearPublished')->add('titleOfReference')->add('cityPublished')->add('publisher')->add('pagesUsed')->add('textSummary')->add('userId')->add('status');
+        $builder->add('nameOfAuthor')
+            ->add('yearPublished')
+            ->add('titleOfReference')
+            ->add('cityPublished')
+            ->add('publisher')
+            ->add('pagesUsed')
+            ->add('textSummary')
+            ->add('status', ChoiceType::class, [
+                'placeholder' => 'Select Status',
+                'choices' => [
+                    'Pending' => 'Pending',
+                    'Public' => 'Public',
+                ]
+            ])
+            ->add('referenceBibliographies', EntityType::class, [
+                'class' => Bibliography::class,
+                'multiple' => true,
+                'expanded' => true,
+                'choice_label' => 'bibliographyName',
+            ])
+            ->add('referenceTags', EntityType::class, [
+                'class' => Tag::class,
+                'multiple' => true,
+                'expanded' => true,
+                'choice_label' => 'tagName',
+            ]);
     }
     
     /**

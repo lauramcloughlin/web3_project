@@ -30,7 +30,6 @@
                 <th>Publisher</th>
                 <th>Pages Used</th>
                 <th>Text Summary</th>
-                <th>User</th>
                 <th>Status</th>
             </tr>
                     {% for reference in basket_reference %}
@@ -43,7 +42,6 @@
                             <td>{{ reference.publisher }}</td>
                             <td>{{ reference.pagesUsed }}</td>
                             <td>{{ reference.textSummary }}</td>
-                            <td>{{ reference.userId }}</td>
                             <td>{{ reference.status }}</td>
                          </tr>
                     {% endfor %}

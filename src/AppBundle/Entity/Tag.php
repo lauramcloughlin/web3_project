@@ -3,6 +3,8 @@
 namespace AppBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use Doctrine\Common\Collections\ArrayCollection;
+
 
 /**
  * Tag
@@ -42,6 +44,20 @@ class Tag
      */
     private $noOfVotes;
 
+    /**
+     * @ORM\ManyToOne(targetEntity="User", inversedBy="tag")
+     */
+    private $user;
+
+    /**
+     * @ORM\ManyToMany(targetEntity="Reference", mappedBy="referenceTags")
+     */
+    private $tagReferences;
+
+    public function __construct()
+    {
+        $this->tagReferences = new ArrayCollection();
+    }
 
     /**
      * Get id
@@ -124,5 +140,31 @@ class Tag
     {
         return $this->noOfVotes;
     }
+
+
+    /**
+     * @return mixed
+     */
+    public function getUser()
+    {
+        return $this->user;
+    }
+
+    /**
+     * @param mixed $user
+     */
+    public function setUser(User $user)
+    {
+        $this->user = $user;
+    }
+
+    /**
+     * @return ArrayCollection|Reference[]
+     */
+    public function getTagReferences()
+    {
+        return $this->tagReferences;
+    }
+
 }
 

@@ -1,11 +1,25 @@
 /* header css */ 
-
 /* header layout */
 
 header {
+	    display: flex;
     	background-color: #010f26;
 	    padding: 1rem;
     	color: white;
+}
+
+header section {
+	display: block;
+}
+
+section.header_left{
+	flex: 1;
+	text-align: left;
+}
+
+section.header_right{
+	flex: 1;
+	text-align: right;
 }
 
 /* header links */
@@ -18,4 +32,7 @@ header a {
 header a:hover {
     	color: white;
     	text-decoration: none;
-}    
+}
+
+
+

@@ -3,12 +3,45 @@
 {% block body %}
 <section class="main_content">
     <h2>Reference creation</h2>
-
+<table>
     {{ form_start(form) }}
-        {{ form_widget(form) }}
-        <input type="submit" value="Create" />
-    {{ form_end(form) }}
 
+    <tr>
+        <td> {{ form_row(form.nameOfAuthor) }}</td>
+    </tr>
+    <tr>
+        <td> {{ form_row(form.yearPublished) }}</td>
+    </tr>
+    <tr>
+        <td> {{ form_row(form.titleOfReference) }}</td>
+    </tr>
+    <tr>
+        <td> {{ form_row(form.cityPublished) }}</td>
+    </tr>
+    <tr>
+        <td> {{ form_row(form.publisher) }}</td>
+    </tr>
+    <tr>
+        <td> {{ form_row(form.pagesUsed) }}</td>
+    </tr>
+    <tr>
+        <td> {{ form_row(form.textSummary) }}</td>
+    </tr>
+    <tr>
+        <td> {{ form_row(form.status) }}</td>
+    </tr>
+    <tr>
+        <td> {{ form_row(form.referenceBibliographies) }}</td>
+    </tr>
+    <tr>
+        <td> {{ form_row(form.referenceTags) }}</td>
+    </tr>
+    <tr>
+        <td>  <input type="submit" value="Create" /></td>
+    </tr>
+
+       {{ form_end(form) }}
+</table>
     <ul>
         <li>
             <a href="{{ path('reference_index') }}">Back to the list</a>

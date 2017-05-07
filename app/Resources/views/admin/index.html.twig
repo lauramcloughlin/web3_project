@@ -1,0 +1,26 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <section class="main_content">
+        <h2>Users &nbsp;&nbsp;<a href="{{ path('admin_new') }}">+ Create a new user</a></h2>
+        <table>
+            <thead>
+            <tr>
+                <th>Email</th>
+                <th>Update</th>
+            </tr>
+            </thead>
+            <tbody>
+            {% for user in users %}
+                <tr>
+                    <td>{{ user.email }}</td>
+                    <td>
+                        <a href="{{ path('admin_edit', { 'id': user.id }) }}">edit</a>
+                    </td>
+
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+    </section>
+{% endblock %}

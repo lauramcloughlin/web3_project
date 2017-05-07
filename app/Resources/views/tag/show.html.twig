@@ -5,7 +5,6 @@
     <h2>Tag</h2>
 
     <table>
-        <tbody>
             <tr>
                 <th>Id</th>
                 <td>{{ tag.id }}</td>
@@ -22,7 +21,20 @@
                 <th>No of Votes</th>
                 <td>{{ tag.noOfVotes }}</td>
             </tr>
-        </tbody>
+    </table>
+    <h3>References with {{ tag.tagName }} tag</h3>
+    <table>
+        <tr>
+           <td>{% for tagReference in tag.tagReferences %}
+                           <li>
+                               <a href="{{ path('reference_show', {
+                                   'id': tagReference.id
+                               }) }}">
+                                   {{ tagReference.nameOfAuthor }}
+                               </a>
+                           </li>
+             {% endfor %}</td>
+        </tr>
     </table>
 
     <ul>

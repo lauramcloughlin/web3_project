@@ -11,10 +11,19 @@ namespace AppBundle\Repository;
 class BibliographyRepository extends \Doctrine\ORM\EntityRepository
 {
     public function findAllLecturerBibs()
+{
+    return $this->createQueryBuilder('bibliography')
+        ->andWhere('bibliography.userid = :userid')
+        ->setParameter('userid', 2)
+        ->getQuery()
+        ->execute();
+}
+
+    public function getBibliographiesByUser($user)
     {
         return $this->createQueryBuilder('bibliography')
-            ->andWhere('bibliography.userid = :userid')
-            ->setParameter('userid', 2)
+            ->andWhere('bibliography.user = :user')
+            ->setParameter('user', $user)
             ->getQuery()
             ->execute();
     }

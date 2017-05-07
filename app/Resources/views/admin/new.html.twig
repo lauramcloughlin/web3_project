@@ -1,0 +1,35 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <section class="main_content">
+<table>
+    <tr>
+        <th>Register</th>
+    </tr>
+
+            {{ form_start(form) }}
+    <tr>
+        <td> {{ form_row(form.email) }}</td>
+    </tr>
+    <tr>
+        <td> {{ form_row(form.plainPassword.first, {
+                'label': 'Password'
+            }) }}</td>
+    </tr>
+    <tr>
+        <td> {{ form_row(form.plainPassword.second, {
+                'label': 'Repeat Password'
+            })  }}</td>
+    </tr>
+    <tr>
+        <td> {{ form_row(form.roles) }}</td>
+    </tr>
+    <tr>
+        <td> <button type="submit"  formnovalidate>Add User</button></td>
+    </tr>
+            {{ form_end(form) }}
+
+</table>
+
+    </section>
+{% endblock %}

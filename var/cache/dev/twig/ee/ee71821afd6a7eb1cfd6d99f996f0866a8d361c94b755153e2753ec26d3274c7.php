@@ -21,29 +21,29 @@ class __TwigTemplate_24f610a0bc8204e18f9faade4e6cead4a7810827cdd3826782c618e9ba4
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_a194ae630a687282ec2749a56c1b13d71db6613720f5c9fc530b3d67c014e817 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_a194ae630a687282ec2749a56c1b13d71db6613720f5c9fc530b3d67c014e817->enter($__internal_a194ae630a687282ec2749a56c1b13d71db6613720f5c9fc530b3d67c014e817_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "bibliography/index.html.twig"));
+        $__internal_ce4a810765fe2730a37c47c194a6a9083420e533b5eeb8b76f9a8d003db8d6b7 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_ce4a810765fe2730a37c47c194a6a9083420e533b5eeb8b76f9a8d003db8d6b7->enter($__internal_ce4a810765fe2730a37c47c194a6a9083420e533b5eeb8b76f9a8d003db8d6b7_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "bibliography/index.html.twig"));
 
-        $__internal_31a96be2cc7a81c2694c24458b56ff3ffd085a23560394149a66ee50ec58afad = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_31a96be2cc7a81c2694c24458b56ff3ffd085a23560394149a66ee50ec58afad->enter($__internal_31a96be2cc7a81c2694c24458b56ff3ffd085a23560394149a66ee50ec58afad_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "bibliography/index.html.twig"));
+        $__internal_2f3aff794b8a40e7247e22de315fccb5ac02447644c20f0f77742a8150a0b8d8 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_2f3aff794b8a40e7247e22de315fccb5ac02447644c20f0f77742a8150a0b8d8->enter($__internal_2f3aff794b8a40e7247e22de315fccb5ac02447644c20f0f77742a8150a0b8d8_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "bibliography/index.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_a194ae630a687282ec2749a56c1b13d71db6613720f5c9fc530b3d67c014e817->leave($__internal_a194ae630a687282ec2749a56c1b13d71db6613720f5c9fc530b3d67c014e817_prof);
+        $__internal_ce4a810765fe2730a37c47c194a6a9083420e533b5eeb8b76f9a8d003db8d6b7->leave($__internal_ce4a810765fe2730a37c47c194a6a9083420e533b5eeb8b76f9a8d003db8d6b7_prof);
 
         
-        $__internal_31a96be2cc7a81c2694c24458b56ff3ffd085a23560394149a66ee50ec58afad->leave($__internal_31a96be2cc7a81c2694c24458b56ff3ffd085a23560394149a66ee50ec58afad_prof);
+        $__internal_2f3aff794b8a40e7247e22de315fccb5ac02447644c20f0f77742a8150a0b8d8->leave($__internal_2f3aff794b8a40e7247e22de315fccb5ac02447644c20f0f77742a8150a0b8d8_prof);
 
     }
 
     // line 3
     public function block_body($context, array $blocks = array())
     {
-        $__internal_be1321c177fbaaa1e1f1f80b9795ebb968b93533ca93a9b1d2e7e7ffd68b6bc3 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_be1321c177fbaaa1e1f1f80b9795ebb968b93533ca93a9b1d2e7e7ffd68b6bc3->enter($__internal_be1321c177fbaaa1e1f1f80b9795ebb968b93533ca93a9b1d2e7e7ffd68b6bc3_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_16683b07cf49ad14bd9f8f310f2b80a56fdd6bd42c3b1c647a547e4ef72d90aa = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_16683b07cf49ad14bd9f8f310f2b80a56fdd6bd42c3b1c647a547e4ef72d90aa->enter($__internal_16683b07cf49ad14bd9f8f310f2b80a56fdd6bd42c3b1c647a547e4ef72d90aa_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
-        $__internal_366bfc170ab70cdd7a8a89f52e9e1d009a5e27026061da0de05ec0e1e9570ba2 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_366bfc170ab70cdd7a8a89f52e9e1d009a5e27026061da0de05ec0e1e9570ba2->enter($__internal_366bfc170ab70cdd7a8a89f52e9e1d009a5e27026061da0de05ec0e1e9570ba2_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_56d4a2bb73a67e58b194fc5f6dfff6b18b4c8e800f680de00607a3d469b7289b = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_56d4a2bb73a67e58b194fc5f6dfff6b18b4c8e800f680de00607a3d469b7289b->enter($__internal_56d4a2bb73a67e58b194fc5f6dfff6b18b4c8e800f680de00607a3d469b7289b_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
         // line 4
         echo "<section class=\"main_content\">
@@ -92,7 +92,7 @@ class __TwigTemplate_24f610a0bc8204e18f9faade4e6cead4a7810827cdd3826782c618e9ba4
             echo "</td>
                 <td>";
             // line 26
-            echo twig_escape_filter($this->env, $this->getAttribute($context["bibliography"], "userId", array()), "html", null, true);
+            echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute($context["bibliography"], "user", array()), "email", array()), "html", null, true);
             echo "</td>
                 <td>
                     <a href=\"";
@@ -119,10 +119,10 @@ class __TwigTemplate_24f610a0bc8204e18f9faade4e6cead4a7810827cdd3826782c618e9ba4
 </section>
 ";
         
-        $__internal_366bfc170ab70cdd7a8a89f52e9e1d009a5e27026061da0de05ec0e1e9570ba2->leave($__internal_366bfc170ab70cdd7a8a89f52e9e1d009a5e27026061da0de05ec0e1e9570ba2_prof);
+        $__internal_56d4a2bb73a67e58b194fc5f6dfff6b18b4c8e800f680de00607a3d469b7289b->leave($__internal_56d4a2bb73a67e58b194fc5f6dfff6b18b4c8e800f680de00607a3d469b7289b_prof);
 
         
-        $__internal_be1321c177fbaaa1e1f1f80b9795ebb968b93533ca93a9b1d2e7e7ffd68b6bc3->leave($__internal_be1321c177fbaaa1e1f1f80b9795ebb968b93533ca93a9b1d2e7e7ffd68b6bc3_prof);
+        $__internal_16683b07cf49ad14bd9f8f310f2b80a56fdd6bd42c3b1c647a547e4ef72d90aa->leave($__internal_16683b07cf49ad14bd9f8f310f2b80a56fdd6bd42c3b1c647a547e4ef72d90aa_prof);
 
     }
 
@@ -176,7 +176,7 @@ class __TwigTemplate_24f610a0bc8204e18f9faade4e6cead4a7810827cdd3826782c618e9ba4
                 <td>{{ bibliography.bibliographyName }}</td>
                 <td>{{ bibliography.textSummary }}</td>
                 <td>{{ bibliography.status }}</td>
-                <td>{{ bibliography.userId }}</td>
+                <td>{{ bibliography.user.email }}</td>
                 <td>
                     <a href=\"{{ path('bibliography_show', { 'id': bibliography.id }) }}\">view</a>
                 </td>

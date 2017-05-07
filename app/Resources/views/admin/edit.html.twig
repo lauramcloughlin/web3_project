@@ -1,0 +1,35 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <section class="main_content">
+<table>
+    <tr>
+        <th>Update a User</th>
+    </tr>
+
+            {{ form_start(edit_form) }}
+    <tr>
+        <td> {{ form_row(edit_form.email) }}</td>
+    </tr>
+    <tr>
+        <td> {{ form_row(edit_form.plainPassword.first, {
+                'label': 'Password'
+            }) }}</td>
+    </tr>
+    <tr>
+        <td> {{ form_row(edit_form.plainPassword.second, {
+                'label': 'Repeat Password'
+            })  }}</td>
+    </tr>
+    <tr>
+        <td> {{ form_row(edit_form.roles) }}</td>
+    </tr>
+    <tr>
+        <td> <button type="submit"  formnovalidate>Update User</button></td>
+    </tr>
+            {{ form_end(edit_form) }}
+
+</table>
+
+    </section>
+{% endblock %}

@@ -2,7 +2,7 @@
 
 {% block body %}
 <section class="main_content">
-    <h2>References &nbsp;&nbsp;<a href="{{ path('reference_new') }}">+ Create a new reference</a></h2>
+    <h2>References &nbsp;{% if (is_granted('ROLE_USER')) %}&nbsp;<a href="{{ path('reference_new') }}">+ Create a new reference</a>{% endif %}</h2>
      <table>
         <thead>
             <tr>
@@ -17,7 +17,9 @@
                 <th>User</th>
                 <th>Status</th>
                 <th>View</th>
+                {% if (is_granted('ROLE_USER')) %}
                 <th>Update</th>
+                {% endif %}
                 <th>Add to Bib Basket</th>
             </tr>
         </thead>
@@ -32,19 +34,21 @@
                 <td>{{ reference.publisher }}</td>
                 <td>{{ reference.pagesUsed }}</td>
                 <td>{{ reference.textSummary }}</td>
-                <td>{{ reference.userId }}</td>
+                <td> <a href="{{ path('admin_edit', {
+                        'id': reference.user.id
+                    }) }}">{{ reference.user.email }}</a></td>
                 <td>{{ reference.status }}</td>
                 <td>
                     <a href="{{ path('reference_show', { 'id': reference.id }) }}">view</a>
                 </td>
+                {% if (is_granted('ROLE_USER')) %}
                 <td>
                     <a href="{{ path('reference_edit', { 'id': reference.id }) }}">edit</a>
                 </td>
-
+                {% endif %}
                 <td>
                     <a href="{{ path('reference_basket_add', { 'id': reference.id }) }}">add to bib basket</a>
                 </td>
-
             </tr>
         {% endfor %}
         </tbody>

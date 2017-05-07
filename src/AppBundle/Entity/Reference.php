@@ -3,6 +3,8 @@
 namespace AppBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use JMS\Serializer\Handler\ArrayCollectionHandler;
+use Doctrine\Common\Collections\ArrayCollection;
 
 /**
  * Reference
@@ -72,11 +74,9 @@ class Reference
     private $textSummary;
 
     /**
-     * @var int
-     *
-     * @ORM\Column(name="userId", type="integer")
+     * @ORM\ManyToOne(targetEntity="User", inversedBy="reference")
      */
-    private $userId;
+    private $user;
 
     /**
      * @var string
@@ -88,16 +88,36 @@ class Reference
     /**
      * @var \DateTime
      *
-     * @ORM\Column(name="dateCreated", type="datetimetz")
+     * @ORM\Column(name="dateCreated", type="datetimetz", nullable=true)
      */
     private $dateCreated;
 
     /**
      * @var \DateTime
      *
-     * @ORM\Column(name="dateLastEdited", type="datetimetz")
+     * @ORM\Column(name="dateLastEdited", type="datetimetz", nullable=true)
      */
     private $dateLastEdited;
+
+    /**
+     * @ORM\ManyToMany(targetEntity="Tag", inversedBy="tagReferences")
+     * * @ORM\JoinTable(name="reference_tag")
+     */
+    private $referenceTags;
+
+
+    /**
+     * @ORM\ManyToMany(targetEntity="Bibliography", inversedBy="bibliographyReferences")
+     * * @ORM\JoinTable(name="bibliography_reference")
+     */
+    private $referenceBibliographies;
+
+
+    public function __construct()
+    {
+        $this->referenceTags = new ArrayCollection();
+        $this->referenceBibliographies = new ArrayCollection();
+    }
 
 
     /**
@@ -279,28 +299,21 @@ class Reference
     }
 
     /**
-     * Set userId
-     *
-     * @param integer $userId
-     *
-     * @return Reference
+     * @return mixed
      */
-    public function setUserId($userId)
+    public function getUser()
     {
-        $this->userId = $userId;
-
-        return $this;
+        return $this->user;
     }
 
     /**
-     * Get userId
-     *
-     * @return int
+     * @param mixed $user
      */
-    public function getUserId()
+    public function setUser(User $user)
     {
-        return $this->userId;
+        $this->user = $user;
     }
+
 
     /**
      * Set status
@@ -373,5 +386,41 @@ class Reference
     {
         return $this->dateLastEdited;
     }
+
+
+    public function addReferenceTag(Tag $tag)
+    {
+        if ($this->referenceTags->contains($tag)) {
+            return;
+        }
+        $this->referenceTags[] = $tag;
+    }
+
+    /**
+     * @return ArrayCollection|Tag[]
+     */
+    public function getReferenceTags()
+    {
+        return $this->referenceTags;
+    }
+
+
+    public function addReferenceBibliography(Bibliography $bibliography)
+    {
+        if ($this->referenceBibliographies->contains($bibliography)) {
+            return;
+        }
+        $this->referenceBibliographies[] = $bibliography;
+    }
+
+    /**
+     * @return ArrayCollection|Bibliography[]
+     */
+    public function getReferenceBibliographies()
+    {
+        return $this->referenceBibliographies;
+    }
+
+
 }
 

@@ -4,10 +4,22 @@
 <section class="main_content">
     <h2>Tag creation</h2>
 
-    {{ form_start(form) }}
-        {{ form_widget(form) }}
-        <input type="submit" value="Create" />
-    {{ form_end(form) }}
+    <table>
+        {{ form_start(form) }}
+        <tr>
+            <td> {{ form_row(form.tagName) }}</td>
+        </tr>
+        <tr>
+            <td> {{ form_row(form.status) }}</td>
+        </tr>
+        <tr>
+            <td> {{ form_row(form.noOfVotes) }}</td>
+        </tr>
+        <tr>
+            <td>  <input type="submit" value="Update" /></td>
+        </tr>
+        {{ form_end(form) }}
+    </table>
 
     <ul>
         <li>

@@ -121,6 +121,17 @@ class appDevDebugProjectContainerUrlMatcher extends Symfony\Bundle\FrameworkBund
             }
             not_bibliography_index:
 
+            // bibliography_user
+            if ($pathinfo === '/bibliography/user') {
+                if (!in_array($this->context->getMethod(), array('GET', 'HEAD'))) {
+                    $allow = array_merge($allow, array('GET', 'HEAD'));
+                    goto not_bibliography_user;
+                }
+
+                return array (  '_controller' => 'AppBundle\\Controller\\BibliographyController::userBibliographyAction',  '_route' => 'bibliography_user',);
+            }
+            not_bibliography_user:
+
             // bibliography_new
             if ($pathinfo === '/bibliography/new') {
                 if (!in_array($this->context->getMethod(), array('GET', 'POST', 'HEAD'))) {
@@ -265,6 +276,19 @@ class appDevDebugProjectContainerUrlMatcher extends Symfony\Bundle\FrameworkBund
 
         }
 
+        if (0 === strpos($pathinfo, '/log')) {
+            // security_login
+            if ($pathinfo === '/login') {
+                return array (  '_controller' => 'AppBundle\\Controller\\SecurityController::loginAction',  '_route' => 'security_login',);
+            }
+
+            // security_logout
+            if ($pathinfo === '/logout') {
+                return array (  '_controller' => 'AppBundle\\Controller\\SecurityController::logoutAction',  '_route' => 'security_logout',);
+            }
+
+        }
+
         if (0 === strpos($pathinfo, '/tag')) {
             // tag_index
             if (rtrim($pathinfo, '/') === '/tag') {
@@ -324,6 +348,40 @@ class appDevDebugProjectContainerUrlMatcher extends Symfony\Bundle\FrameworkBund
                 return $this->mergeDefaults(array_replace($matches, array('_route' => 'tag_delete')), array (  '_controller' => 'AppBundle\\Controller\\TagController::deleteAction',));
             }
             not_tag_delete:
+
+        }
+
+        if (0 === strpos($pathinfo, '/admin')) {
+            // admin_index
+            if (rtrim($pathinfo, '/') === '/admin') {
+                if (!in_array($this->context->getMethod(), array('GET', 'HEAD'))) {
+                    $allow = array_merge($allow, array('GET', 'HEAD'));
+                    goto not_admin_index;
+                }
+
+                if (substr($pathinfo, -1) !== '/') {
+                    return $this->redirect($pathinfo.'/', 'admin_index');
+                }
+
+                return array (  '_controller' => 'AppBundle\\Controller\\UserController::indexAction',  '_route' => 'admin_index',);
+            }
+            not_admin_index:
+
+            // admin_new
+            if ($pathinfo === '/admin/new') {
+                return array (  '_controller' => 'AppBundle\\Controller\\UserController::newAction',  '_route' => 'admin_new',);
+            }
+
+            // admin_edit
+            if (preg_match('#^/admin/(?P<id>[^/]++)/edit$#s', $pathinfo, $matches)) {
+                if (!in_array($this->context->getMethod(), array('GET', 'POST', 'HEAD'))) {
+                    $allow = array_merge($allow, array('GET', 'POST', 'HEAD'));
+                    goto not_admin_edit;
+                }
+
+                return $this->mergeDefaults(array_replace($matches, array('_route' => 'admin_edit')), array (  '_controller' => 'AppBundle\\Controller\\UserController::editAction',));
+            }
+            not_admin_edit:
 
         }
 

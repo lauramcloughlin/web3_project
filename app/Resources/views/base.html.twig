@@ -17,9 +17,17 @@
     </head>
     <body>
     <header>
-        <section class="header">
-           <h1>Bibliography Manager</h1>
+        <section class="header_left"><h1>Bibliography Manager</h1></section>
+        <section class="header_right">
+            {% if is_granted('ROLE_USER') %}
+                <h3><a href="{{ path('security_logout') }}">Logout</a></h3>
+            {% else %}
+                <h3><a href="{{ path('security_login') }}">Login</a></h3>
+            {% endif %}
+            {{ app.user ? app.user.email }}
         </section>
+    </header>
+     </section>
     </header>
     <main>
 
@@ -29,6 +37,9 @@
                 <li><h3><a href="{{ path('bibliography_index') }}">Bibliography</a></h3></li>
                 <li><h3><a href="{{ path('tag_index') }}">Tag</a></h3></li>
                 <li><h3><a href="{{ path('reference_basket_index') }}">New Bib References</a></h3></li>
+                {% if is_granted('ROLE_ADMIN') %}
+                <li><h3><a href="{{ path('admin_index') }}">Admin</a></h3></li>
+                {% endif %}
             </ul>
          </section>
 

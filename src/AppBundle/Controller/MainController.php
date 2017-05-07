@@ -2,6 +2,9 @@
 
 namespace AppBundle\Controller;
 
+use AppBundle\Entity\Reference;
+use AppBundle\Entity\Bibliography;
+use AppBundle\Entity\Tag;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
@@ -14,12 +17,14 @@ class MainController extends Controller
      */
     public function indexAction(Request $request)
     {
+
         $argsArray = [
             'name' => 'Bibliography Home Page'
         ];
 
-        $templateName = 'index';
-        return $this->render($templateName . '.html.twig', $argsArray);
+        return $this->render('/index.html.twig', $argsArray);
     }
+
+
 
 }

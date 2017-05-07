@@ -2,7 +2,7 @@
 
 {% block body %}
 <section class="main_content">
-    <h2>Bibliographies &nbsp;&nbsp;<a href="{{ path('bibliography_new') }}">+ Create a new bibliography</a></h2>
+    <h2>Bibliographies {% if (is_granted('ROLE_USER')) %}&nbsp;&nbsp;<a href="{{ path('bibliography_new') }}">+ Create a new bibliography</a>{% endif %}</h2>
 
     <table>
         <thead>
@@ -13,7 +13,9 @@
                 <th>Status</th>
                 <th>User</th>
                 <th>View</th>
+                {% if (is_granted('ROLE_USER')) %}
                 <th>Update</th>
+                {% endif %}
             </tr>
         </thead>
         <tbody>
@@ -23,13 +25,15 @@
                 <td>{{ bibliography.bibliographyName }}</td>
                 <td>{{ bibliography.textSummary }}</td>
                 <td>{{ bibliography.status }}</td>
-                <td>{{ bibliography.userId }}</td>
+                <td>{{ bibliography.user.email }}</td>
                 <td>
                     <a href="{{ path('bibliography_show', { 'id': bibliography.id }) }}">view</a>
                 </td>
+                {% if (is_granted('ROLE_USER')) %}
                 <td>
                     <a href="{{ path('bibliography_edit', { 'id': bibliography.id }) }}">edit</a>
                 </td>
+                {% endif %}
             </tr>
         {% endfor %}
         </tbody>

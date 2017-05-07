@@ -5,7 +5,6 @@
     <h2>Reference</h2>
 
     <table>
-        <tbody>
             <tr>
                 <th>Id</th>
                 <td>{{ reference.id }}</td>
@@ -38,14 +37,15 @@
                 <th>Text Summary</th>
                 <td>{{ reference.textSummary }}</td>
             </tr>
-            <tr>
-                <th>User</th>
-                <td>{{ reference.userId }}</td>
-            </tr>
-            <tr>
+             <tr>
                 <th>Status</th>
                 <td>{{ reference.status }}</td>
             </tr>
+            <tr>
+                <th>Reference added by</th>
+                <td>{{ reference.user.email }}</td>
+            </tr>
+
             <tr>
                 <th>Date Created</th>
                 <td>{{ reference.dateCreated|date('Y-m-d') }}</td>
@@ -54,7 +54,37 @@
                 <th>Date Last Edited</th>
                 <td> {{ reference.dateLastEdited|date('Y-m-d') }}</td>
             </tr>
-        </tbody>
+        <tr>
+            <th>Bibliographies</th>
+            <td> <ul>
+                    {% for referenceBibliography in reference.referenceBibliographies %}
+                        <li>
+                            <a href="{{ path('bibliography_show', {
+                                'id': referenceBibliography.id
+                            }) }}">
+                                {{ referenceBibliography.bibliographyName }}
+                            </a>
+                        </li>
+                    {% endfor %}
+                </ul></td>
+        </tr>
+            <tr>
+                <th>Tags</th>
+                <td> <ul>
+                        {% for referenceTag in reference.referenceTags %}
+                            <li>
+                                <a href="{{ path('tag_show', {
+                                    'id': referenceTag.id
+                                }) }}">
+                                    {{ referenceTag.tagName }}
+                                </a>
+                              </li>
+                        {% endfor %}
+                    </ul></td>
+            </tr>
+
+
+
     </table>
 
     <ul>

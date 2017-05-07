@@ -3,6 +3,8 @@
 namespace AppBundle\Controller;
 
 use AppBundle\Entity\Tag;
+use AppBundle\Entity\User;
+use AppBundle\Entity\Reference;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Method;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;use Symfony\Component\HttpFoundation\Request;
@@ -22,6 +24,7 @@ class TagController extends Controller
      */
     public function indexAction()
     {
+
         $em = $this->getDoctrine()->getManager();
 
         $tags = $em->getRepository('AppBundle:Tag')->findAll();
@@ -39,11 +42,19 @@ class TagController extends Controller
      */
     public function newAction(Request $request)
     {
+        $this->denyAccessUnlessGranted('ROLE_STUDENT');
+        $this->denyAccessUnlessGranted('ROLE_LECTURER');
+
         $tag = new Tag();
         $form = $this->createForm('AppBundle\Form\TagType', $tag);
         $form->handleRequest($request);
 
         if ($form->isSubmitted() && $form->isValid()) {
+
+            $user = new User();
+            $user = $this->get('security.token_storage')->getToken()->getUser();
+            $tag->setUser($user);
+
             $em = $this->getDoctrine()->getManager();
             $em->persist($tag);
             $em->flush();
@@ -81,19 +92,24 @@ class TagController extends Controller
      */
     public function editAction(Request $request, Tag $tag)
     {
+        $this->denyAccessUnlessGranted('ROLE_STUDENT');
+
         $deleteForm = $this->createDeleteForm($tag);
         $editForm = $this->createForm('AppBundle\Form\TagType', $tag);
         $editForm->handleRequest($request);
 
         if ($editForm->isSubmitted() && $editForm->isValid()) {
+
+
+
             $this->getDoctrine()->getManager()->flush();
 
-            return $this->redirectToRoute('tag_edit', array('id' => $tag->getId()));
+            return $this->redirectToRoute('tag_show', array('id' => $tag->getId()));
         }
 
         return $this->render('tag/edit.html.twig', array(
             'tag' => $tag,
-            'edit_form' => $editForm->createView(),
+            'form' => $editForm->createView(),
             'delete_form' => $deleteForm->createView(),
         ));
     }
@@ -106,6 +122,8 @@ class TagController extends Controller
      */
     public function deleteAction(Request $request, Tag $tag)
     {
+        $this->denyAccessUnlessGranted('ROLE_STUDENT');
+
         $form = $this->createDeleteForm($tag);
         $form->handleRequest($request);
 
@@ -127,6 +145,8 @@ class TagController extends Controller
      */
     private function createDeleteForm(Tag $tag)
     {
+        $this->denyAccessUnlessGranted('ROLE_STUDENT');
+
         return $this->createFormBuilder()
             ->setAction($this->generateUrl('tag_delete', array('id' => $tag->getId())))
             ->setMethod('DELETE')

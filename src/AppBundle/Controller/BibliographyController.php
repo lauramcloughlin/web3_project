@@ -2,7 +2,10 @@
 
 namespace AppBundle\Controller;
 
+
 use AppBundle\Entity\Bibliography;
+use AppBundle\Entity\Reference;
+use AppBundle\Entity\User;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Method;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;use Symfony\Component\HttpFoundation\Request;
@@ -32,6 +35,28 @@ class BibliographyController extends Controller
     }
 
     /**
+     * Lists all users bibliographies entities.
+     *
+     * @Route("/user", name="bibliography_user")
+     * @Method("GET")
+     */
+    public function userBibliographyAction()
+    {
+
+        $user = $this->getUser();
+        //$userId = $user->getId();
+
+        $em = $this->getDoctrine()->getManager();
+
+        $userBibliographies = $em->getRepository('AppBundle:Bibliography')
+            ->getBibliographiesByUser($user);
+
+        return $this->render('bibliography/user.html.twig', array(
+            'bibliographies' => $userBibliographies,
+        ));
+    }
+
+    /**
      * Creates a new bibliography entity.
      *
      * @Route("/new", name="bibliography_new")
@@ -44,6 +69,11 @@ class BibliographyController extends Controller
         $form->handleRequest($request);
 
         if ($form->isSubmitted() && $form->isValid()) {
+
+            $user = new User();
+            $user = $this->get('security.token_storage')->getToken()->getUser();
+            $bibliography->setUser($user);
+
             $em = $this->getDoctrine()->getManager();
             $em->persist($bibliography);
             $em->flush();
@@ -88,12 +118,12 @@ class BibliographyController extends Controller
         if ($editForm->isSubmitted() && $editForm->isValid()) {
             $this->getDoctrine()->getManager()->flush();
 
-            return $this->redirectToRoute('bibliography_edit', array('id' => $bibliography->getId()));
+            return $this->redirectToRoute('bibliography_show', array('id' => $bibliography->getId()));
         }
 
         return $this->render('bibliography/edit.html.twig', array(
             'bibliography' => $bibliography,
-            'edit_form' => $editForm->createView(),
+            'form' => $editForm->createView(),
             'delete_form' => $deleteForm->createView(),
         ));
     }

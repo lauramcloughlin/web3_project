@@ -13,7 +13,16 @@ class TagType extends AbstractType
      */
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
-        $builder->add('tagName')->add('status')->add('noOfVotes');
+        $builder->add('tagName')
+            ->add('status', ChoiceType::class, [
+                'placeholder' => 'Select Status',
+                'choices' => [
+                    'Proposed' => 'Proposed',
+                    'Accepted' => 'Accepted',
+                    'Rejected' => 'Rejected',
+                ]
+            ])
+            ->add('noOfVotes');
     }
     
     /**

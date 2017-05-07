@@ -3,6 +3,7 @@
 namespace AppBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use Doctrine\Common\Collections\ArrayCollection;
 
 /**
  * Bibliography
@@ -43,11 +44,21 @@ class Bibliography
     private $status;
 
     /**
-     * @var int
-     *
-     * @ORM\Column(name="userId", type="integer")
+     * @ORM\ManyToOne(targetEntity="User", inversedBy="bibliography")
      */
-    private $userId;
+    private $user;
+
+
+
+    /**
+     * @ORM\ManyToMany(targetEntity="Reference", mappedBy="referenceBibliographies")
+     */
+    private $bibliographyReferences;
+
+    public function __construct()
+    {
+        $this->bibliographyReferences = new ArrayCollection();
+    }
 
 
     /**
@@ -133,27 +144,29 @@ class Bibliography
     }
 
     /**
-     * Set userId
-     *
-     * @param integer $userId
-     *
-     * @return Bibliography
+     * @return mixed
      */
-    public function setUserId($userId)
+    public function getUser()
     {
-        $this->userId = $userId;
-
-        return $this;
+        return $this->user;
     }
 
     /**
-     * Get userId
-     *
-     * @return int
+     * @param mixed $user
      */
-    public function getUserId()
+    public function setUser(User $user)
     {
-        return $this->userId;
+        $this->user = $user;
     }
+
+    /**
+     * @return ArrayCollection|Reference[]
+     */
+    public function getBibliographyReferences()
+    {
+        return $this->bibliographyReferences;
+    }
+
+
 }
 
