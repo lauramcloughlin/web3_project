@@ -22,47 +22,47 @@ class __TwigTemplate_2e00a6edcad4db4a0bec52204f27d2a10db322675670e09a6cae6e8a9bc
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_7490b6df6364130d6cee18ff5ec0ffdd11d98d3d1a8e9ed02e2856dde42918b1 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_7490b6df6364130d6cee18ff5ec0ffdd11d98d3d1a8e9ed02e2856dde42918b1->enter($__internal_7490b6df6364130d6cee18ff5ec0ffdd11d98d3d1a8e9ed02e2856dde42918b1_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "basket/index.html.twig"));
+        $__internal_d998fbb7381e1d050fb727d0e2c8742709af26f9a361e7e2a3a6f514d87d0eb2 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_d998fbb7381e1d050fb727d0e2c8742709af26f9a361e7e2a3a6f514d87d0eb2->enter($__internal_d998fbb7381e1d050fb727d0e2c8742709af26f9a361e7e2a3a6f514d87d0eb2_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "basket/index.html.twig"));
 
-        $__internal_edb81ef17890a01ccbc55464875414a1d5fe8738c92daf5083c8d3d1b7aa0385 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_edb81ef17890a01ccbc55464875414a1d5fe8738c92daf5083c8d3d1b7aa0385->enter($__internal_edb81ef17890a01ccbc55464875414a1d5fe8738c92daf5083c8d3d1b7aa0385_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "basket/index.html.twig"));
+        $__internal_43415019b3bcaeb59109559ffe6a176a183b605fd0ae6f713b2d5c0e4775e596 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_43415019b3bcaeb59109559ffe6a176a183b605fd0ae6f713b2d5c0e4775e596->enter($__internal_43415019b3bcaeb59109559ffe6a176a183b605fd0ae6f713b2d5c0e4775e596_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "basket/index.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_7490b6df6364130d6cee18ff5ec0ffdd11d98d3d1a8e9ed02e2856dde42918b1->leave($__internal_7490b6df6364130d6cee18ff5ec0ffdd11d98d3d1a8e9ed02e2856dde42918b1_prof);
+        $__internal_d998fbb7381e1d050fb727d0e2c8742709af26f9a361e7e2a3a6f514d87d0eb2->leave($__internal_d998fbb7381e1d050fb727d0e2c8742709af26f9a361e7e2a3a6f514d87d0eb2_prof);
 
         
-        $__internal_edb81ef17890a01ccbc55464875414a1d5fe8738c92daf5083c8d3d1b7aa0385->leave($__internal_edb81ef17890a01ccbc55464875414a1d5fe8738c92daf5083c8d3d1b7aa0385_prof);
+        $__internal_43415019b3bcaeb59109559ffe6a176a183b605fd0ae6f713b2d5c0e4775e596->leave($__internal_43415019b3bcaeb59109559ffe6a176a183b605fd0ae6f713b2d5c0e4775e596_prof);
 
     }
 
     // line 3
     public function block_pageTitle($context, array $blocks = array())
     {
-        $__internal_401c9f39093523ee588f9815991a0a2e251282fc1a0bd88e6f11e0ddfe7ca6af = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_401c9f39093523ee588f9815991a0a2e251282fc1a0bd88e6f11e0ddfe7ca6af->enter($__internal_401c9f39093523ee588f9815991a0a2e251282fc1a0bd88e6f11e0ddfe7ca6af_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "pageTitle"));
+        $__internal_5f8bc7f26404eb51a0efa6b5cae167694e5c161258dd189fe154d0d332c27cb0 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_5f8bc7f26404eb51a0efa6b5cae167694e5c161258dd189fe154d0d332c27cb0->enter($__internal_5f8bc7f26404eb51a0efa6b5cae167694e5c161258dd189fe154d0d332c27cb0_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "pageTitle"));
 
-        $__internal_65d4096b9a4dfa0351a8a6f168bd21deaf0bc665847a580202c2e204bf1eea54 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_65d4096b9a4dfa0351a8a6f168bd21deaf0bc665847a580202c2e204bf1eea54->enter($__internal_65d4096b9a4dfa0351a8a6f168bd21deaf0bc665847a580202c2e204bf1eea54_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "pageTitle"));
+        $__internal_56a3c8aa18850ea18d003984f854741c74fb002cf78a9ab7f0585ecc11ce98d6 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_56a3c8aa18850ea18d003984f854741c74fb002cf78a9ab7f0585ecc11ce98d6->enter($__internal_56a3c8aa18850ea18d003984f854741c74fb002cf78a9ab7f0585ecc11ce98d6_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "pageTitle"));
 
         echo " - Reference Basket";
         
-        $__internal_65d4096b9a4dfa0351a8a6f168bd21deaf0bc665847a580202c2e204bf1eea54->leave($__internal_65d4096b9a4dfa0351a8a6f168bd21deaf0bc665847a580202c2e204bf1eea54_prof);
+        $__internal_56a3c8aa18850ea18d003984f854741c74fb002cf78a9ab7f0585ecc11ce98d6->leave($__internal_56a3c8aa18850ea18d003984f854741c74fb002cf78a9ab7f0585ecc11ce98d6_prof);
 
         
-        $__internal_401c9f39093523ee588f9815991a0a2e251282fc1a0bd88e6f11e0ddfe7ca6af->leave($__internal_401c9f39093523ee588f9815991a0a2e251282fc1a0bd88e6f11e0ddfe7ca6af_prof);
+        $__internal_5f8bc7f26404eb51a0efa6b5cae167694e5c161258dd189fe154d0d332c27cb0->leave($__internal_5f8bc7f26404eb51a0efa6b5cae167694e5c161258dd189fe154d0d332c27cb0_prof);
 
     }
 
     // line 5
     public function block_body($context, array $blocks = array())
     {
-        $__internal_09f926ddb8bda7d6ba0160e46d32583f3afd7a7be2b53b7722c97aaa44b9b052 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_09f926ddb8bda7d6ba0160e46d32583f3afd7a7be2b53b7722c97aaa44b9b052->enter($__internal_09f926ddb8bda7d6ba0160e46d32583f3afd7a7be2b53b7722c97aaa44b9b052_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_d157dc8ae77ff2530570c3470fa64714ee0dc16598ba750a9c757f1815aca955 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_d157dc8ae77ff2530570c3470fa64714ee0dc16598ba750a9c757f1815aca955->enter($__internal_d157dc8ae77ff2530570c3470fa64714ee0dc16598ba750a9c757f1815aca955_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
-        $__internal_85ad27e9260524d064424633e3e67a13de6e2ac3e94141b5bc8ea048671def90 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_85ad27e9260524d064424633e3e67a13de6e2ac3e94141b5bc8ea048671def90->enter($__internal_85ad27e9260524d064424633e3e67a13de6e2ac3e94141b5bc8ea048671def90_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_b5de0003727763c6e3281a341a2770d6ecc593a77abfeeda2aa83eb3ee5b6bf1 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_b5de0003727763c6e3281a341a2770d6ecc593a77abfeeda2aa83eb3ee5b6bf1->enter($__internal_b5de0003727763c6e3281a341a2770d6ecc593a77abfeeda2aa83eb3ee5b6bf1_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
         // line 6
         echo "    <section class=\"main_content\">
@@ -73,10 +73,7 @@ class __TwigTemplate_2e00a6edcad4db4a0bec52204f27d2a10db322675670e09a6cae6e8a9bc
         $context["basket_reference"] = $this->getAttribute($this->getAttribute(($context["app"] ?? $this->getContext($context, "app")), "session", array()), "get", array(0 => "basket"), "method");
         // line 10
         echo "
-            ";
-        // line 11
-        echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\DumpExtension')->dump($this->env, $context, $this->getAttribute($this->getAttribute(($context["app"] ?? $this->getContext($context, "app")), "session", array()), "get", array(0 => "basket"), "method"));
-        echo "
+
 
         <h3>Add to your Bibliography list</h3>
 
@@ -107,71 +104,76 @@ class __TwigTemplate_2e00a6edcad4db4a0bec52204f27d2a10db322675670e09a6cae6e8a9bc
                 <th>Pages Used</th>
                 <th>Text Summary</th>
                 <th>Status</th>
+                <th> </th>
             </tr>
                     ";
-            // line 35
+            // line 36
             $context['_parent'] = $context;
             $context['_seq'] = twig_ensure_traversable(($context["basket_reference"] ?? $this->getContext($context, "basket_reference")));
             foreach ($context['_seq'] as $context["_key"] => $context["reference"]) {
-                // line 36
+                // line 37
                 echo "                        <tr>
                             <td>";
-                // line 37
+                // line 38
                 echo twig_escape_filter($this->env, $this->getAttribute($context["reference"], "id", array()), "html", null, true);
                 echo "</td>
                             <td>";
-                // line 38
+                // line 39
                 echo twig_escape_filter($this->env, $this->getAttribute($context["reference"], "nameOfAuthor", array()), "html", null, true);
                 echo "</td>
                             <td>";
-                // line 39
+                // line 40
                 echo twig_escape_filter($this->env, $this->getAttribute($context["reference"], "yearPublished", array()), "html", null, true);
                 echo "</td>
                             <td>";
-                // line 40
+                // line 41
                 echo twig_escape_filter($this->env, $this->getAttribute($context["reference"], "titleOfReference", array()), "html", null, true);
                 echo "</td>
                             <td>";
-                // line 41
+                // line 42
                 echo twig_escape_filter($this->env, $this->getAttribute($context["reference"], "cityPublished", array()), "html", null, true);
                 echo "</td>
                             <td>";
-                // line 42
+                // line 43
                 echo twig_escape_filter($this->env, $this->getAttribute($context["reference"], "publisher", array()), "html", null, true);
                 echo "</td>
                             <td>";
-                // line 43
+                // line 44
                 echo twig_escape_filter($this->env, $this->getAttribute($context["reference"], "pagesUsed", array()), "html", null, true);
                 echo "</td>
                             <td>";
-                // line 44
+                // line 45
                 echo twig_escape_filter($this->env, $this->getAttribute($context["reference"], "textSummary", array()), "html", null, true);
                 echo "</td>
                             <td>";
-                // line 45
+                // line 46
                 echo twig_escape_filter($this->env, $this->getAttribute($context["reference"], "status", array()), "html", null, true);
                 echo "</td>
+                            <td><a href=\"";
+                // line 47
+                echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("reference_basket_delete", array("id" => $this->getAttribute($context["reference"], "id", array()))), "html", null, true);
+                echo "\">Remove</a></td>
                          </tr>
                     ";
             }
             $_parent = $context['_parent'];
             unset($context['_seq'], $context['_iterated'], $context['_key'], $context['reference'], $context['_parent'], $context['loop']);
             $context = array_intersect_key($context, $_parent) + $_parent;
-            // line 48
+            // line 50
             echo "            <tr>
                 <td colspan=\"5\">
             <a href=\"";
-            // line 50
+            // line 52
             echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("bibliography_new");
             echo "\">Create Bibliography and add these references</a>
                 </td>
                 <td colspan=\"5\">
                     <a href=\"";
-            // line 53
+            // line 55
             echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("bibliography_new");
             echo "\">Export to JSON</a>
                     <a href=\"";
-            // line 54
+            // line 56
             echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("bibliography_new");
             echo "\">Export to TEXT  File</a>
                 </td>
@@ -180,29 +182,29 @@ class __TwigTemplate_2e00a6edcad4db4a0bec52204f27d2a10db322675670e09a6cae6e8a9bc
                 </ul>
             ";
         }
-        // line 60
+        // line 62
         echo "
     ";
-        // line 61
+        // line 63
         if (($context["basket_reference"] ?? $this->getContext($context, "basket_reference"))) {
-            // line 62
+            // line 64
             echo "            <p>
                 <a href=\"";
-            // line 63
+            // line 65
             echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("reference_basket_clear");
             echo "\">Clear all items in basket</a>
             </p>
 
     ";
         }
-        // line 67
+        // line 69
         echo "    </section>
 ";
         
-        $__internal_85ad27e9260524d064424633e3e67a13de6e2ac3e94141b5bc8ea048671def90->leave($__internal_85ad27e9260524d064424633e3e67a13de6e2ac3e94141b5bc8ea048671def90_prof);
+        $__internal_b5de0003727763c6e3281a341a2770d6ecc593a77abfeeda2aa83eb3ee5b6bf1->leave($__internal_b5de0003727763c6e3281a341a2770d6ecc593a77abfeeda2aa83eb3ee5b6bf1_prof);
 
         
-        $__internal_09f926ddb8bda7d6ba0160e46d32583f3afd7a7be2b53b7722c97aaa44b9b052->leave($__internal_09f926ddb8bda7d6ba0160e46d32583f3afd7a7be2b53b7722c97aaa44b9b052_prof);
+        $__internal_d157dc8ae77ff2530570c3470fa64714ee0dc16598ba750a9c757f1815aca955->leave($__internal_d157dc8ae77ff2530570c3470fa64714ee0dc16598ba750a9c757f1815aca955_prof);
 
     }
 
@@ -218,7 +220,7 @@ class __TwigTemplate_2e00a6edcad4db4a0bec52204f27d2a10db322675670e09a6cae6e8a9bc
 
     public function getDebugInfo()
     {
-        return array (  199 => 67,  192 => 63,  189 => 62,  187 => 61,  184 => 60,  175 => 54,  171 => 53,  165 => 50,  161 => 48,  152 => 45,  148 => 44,  144 => 43,  140 => 42,  136 => 41,  132 => 40,  128 => 39,  124 => 38,  120 => 37,  117 => 36,  113 => 35,  99 => 23,  93 => 20,  87 => 16,  85 => 15,  78 => 11,  75 => 10,  73 => 9,  68 => 6,  59 => 5,  41 => 3,  11 => 1,);
+        return array (  201 => 69,  194 => 65,  191 => 64,  189 => 63,  186 => 62,  177 => 56,  173 => 55,  167 => 52,  163 => 50,  154 => 47,  150 => 46,  146 => 45,  142 => 44,  138 => 43,  134 => 42,  130 => 41,  126 => 40,  122 => 39,  118 => 38,  115 => 37,  111 => 36,  96 => 23,  90 => 20,  84 => 16,  82 => 15,  75 => 10,  73 => 9,  68 => 6,  59 => 5,  41 => 3,  11 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -241,7 +243,7 @@ class __TwigTemplate_2e00a6edcad4db4a0bec52204f27d2a10db322675670e09a6cae6e8a9bc
 
      {% set basket_reference = app.session.get('basket') %}
 
-            {{ dump(app.session.get('basket')) }}
+
 
         <h3>Add to your Bibliography list</h3>
 
@@ -264,6 +266,7 @@ class __TwigTemplate_2e00a6edcad4db4a0bec52204f27d2a10db322675670e09a6cae6e8a9bc
                 <th>Pages Used</th>
                 <th>Text Summary</th>
                 <th>Status</th>
+                <th> </th>
             </tr>
                     {% for reference in basket_reference %}
                         <tr>
@@ -276,6 +279,7 @@ class __TwigTemplate_2e00a6edcad4db4a0bec52204f27d2a10db322675670e09a6cae6e8a9bc
                             <td>{{ reference.pagesUsed }}</td>
                             <td>{{ reference.textSummary }}</td>
                             <td>{{ reference.status }}</td>
+                            <td><a href=\"{{ path('reference_basket_delete', { 'id': reference.id }) }}\">Remove</a></td>
                          </tr>
                     {% endfor %}
             <tr>

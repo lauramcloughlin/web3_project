@@ -8,7 +8,9 @@ use AppBundle\Entity\Reference;
 use AppBundle\Entity\User;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Method;
-use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;use Symfony\Component\HttpFoundation\Request;
+use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
+use Symfony\Component\HttpFoundation\Request;
+use Symfony\Component\HttpFoundation\Session\Session;
 
 /**
  * Bibliography controller.
@@ -76,6 +78,12 @@ class BibliographyController extends Controller
             $user = new User();
             $user = $this->get('security.token_storage')->getToken()->getUser();
             $bibliography->setUser($user);
+
+           // $session = new Session();
+           // if($session->has('basket')){
+           //     $reference = $session->get('basket');
+           //     $bibliography->setBibliographyReferences($reference);
+           // }
 
             $em = $this->getDoctrine()->getManager();
             $em->persist($bibliography);

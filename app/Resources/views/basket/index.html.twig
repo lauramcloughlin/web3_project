@@ -8,7 +8,7 @@
 
      {% set basket_reference = app.session.get('basket') %}
 
-            {{ dump(app.session.get('basket')) }}
+
 
         <h3>Add to your Bibliography list</h3>
 
@@ -31,6 +31,7 @@
                 <th>Pages Used</th>
                 <th>Text Summary</th>
                 <th>Status</th>
+                <th> </th>
             </tr>
                     {% for reference in basket_reference %}
                         <tr>
@@ -43,6 +44,7 @@
                             <td>{{ reference.pagesUsed }}</td>
                             <td>{{ reference.textSummary }}</td>
                             <td>{{ reference.status }}</td>
+                            <td><a href="{{ path('reference_basket_delete', { 'id': reference.id }) }}">Remove</a></td>
                          </tr>
                     {% endfor %}
             <tr>

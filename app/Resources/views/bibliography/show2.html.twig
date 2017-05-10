@@ -32,7 +32,7 @@
         <tr>
             <td>{% for bibliographyReference in bibliography.bibliographyReferences %}
                     <li>
-                            {{ bibliographyReference.nameOfAuthor }}, {{ bibliographyReference.titleOfReference }}
+                            {{ bibliographyReference.nameOfAuthor }}, {{ bibliographyReference.titleOfReference }}, {{ bibliographyReference.yearPublished }}
                     </li>
                 {% endfor %}</td>
         </tr>

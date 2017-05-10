@@ -21,29 +21,29 @@ class __TwigTemplate_0425d7ce3b00bd20a4c604621574d5fd470e19015a8ab269f1ffe0f5b6a
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_f49261ba96a7113715daf06d780ed1c44b19599ac43d97389a97a1e44359e0dd = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_f49261ba96a7113715daf06d780ed1c44b19599ac43d97389a97a1e44359e0dd->enter($__internal_f49261ba96a7113715daf06d780ed1c44b19599ac43d97389a97a1e44359e0dd_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "bibliography/show.html.twig"));
+        $__internal_863cbefa14a8d24bf49ee830a319d4f98d90bf951e0184cdac2f86fa2a3f7760 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_863cbefa14a8d24bf49ee830a319d4f98d90bf951e0184cdac2f86fa2a3f7760->enter($__internal_863cbefa14a8d24bf49ee830a319d4f98d90bf951e0184cdac2f86fa2a3f7760_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "bibliography/show.html.twig"));
 
-        $__internal_15fd41cf6619f1b61b19cb443b8b0887cca696b02746544959aeb88cffb1cab8 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_15fd41cf6619f1b61b19cb443b8b0887cca696b02746544959aeb88cffb1cab8->enter($__internal_15fd41cf6619f1b61b19cb443b8b0887cca696b02746544959aeb88cffb1cab8_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "bibliography/show.html.twig"));
+        $__internal_a5f085a46920f8b38f0bd4726998c5abe8653d127a8a268eee46ed195c308ebf = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_a5f085a46920f8b38f0bd4726998c5abe8653d127a8a268eee46ed195c308ebf->enter($__internal_a5f085a46920f8b38f0bd4726998c5abe8653d127a8a268eee46ed195c308ebf_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "bibliography/show.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_f49261ba96a7113715daf06d780ed1c44b19599ac43d97389a97a1e44359e0dd->leave($__internal_f49261ba96a7113715daf06d780ed1c44b19599ac43d97389a97a1e44359e0dd_prof);
+        $__internal_863cbefa14a8d24bf49ee830a319d4f98d90bf951e0184cdac2f86fa2a3f7760->leave($__internal_863cbefa14a8d24bf49ee830a319d4f98d90bf951e0184cdac2f86fa2a3f7760_prof);
 
         
-        $__internal_15fd41cf6619f1b61b19cb443b8b0887cca696b02746544959aeb88cffb1cab8->leave($__internal_15fd41cf6619f1b61b19cb443b8b0887cca696b02746544959aeb88cffb1cab8_prof);
+        $__internal_a5f085a46920f8b38f0bd4726998c5abe8653d127a8a268eee46ed195c308ebf->leave($__internal_a5f085a46920f8b38f0bd4726998c5abe8653d127a8a268eee46ed195c308ebf_prof);
 
     }
 
     // line 3
     public function block_body($context, array $blocks = array())
     {
-        $__internal_65969ecf2a3b04eb963e948737889890e2e8ff450651332454da0eed4af2c15c = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_65969ecf2a3b04eb963e948737889890e2e8ff450651332454da0eed4af2c15c->enter($__internal_65969ecf2a3b04eb963e948737889890e2e8ff450651332454da0eed4af2c15c_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_27b625c0ad92dc61103c70495697e7d53e876e1c7fa25cd4c3d674d459d7afe6 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_27b625c0ad92dc61103c70495697e7d53e876e1c7fa25cd4c3d674d459d7afe6->enter($__internal_27b625c0ad92dc61103c70495697e7d53e876e1c7fa25cd4c3d674d459d7afe6_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
-        $__internal_7f7adfea83671fe844f823f716f2ad1a664c5035faa480fc461f2a8ff2c037dd = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_7f7adfea83671fe844f823f716f2ad1a664c5035faa480fc461f2a8ff2c037dd->enter($__internal_7f7adfea83671fe844f823f716f2ad1a664c5035faa480fc461f2a8ff2c037dd_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_1744b941f0b30260514f283c60fc8b5aa1d7f3a10681c78e706be927f2d5430c = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_1744b941f0b30260514f283c60fc8b5aa1d7f3a10681c78e706be927f2d5430c->enter($__internal_1744b941f0b30260514f283c60fc8b5aa1d7f3a10681c78e706be927f2d5430c_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
         // line 4
         echo "<section class=\"main_content\">
@@ -111,6 +111,10 @@ $context["bibliographyReference"], "id", array()))), "html", null, true);
                             ";
                 // line 38
                 echo twig_escape_filter($this->env, $this->getAttribute($context["bibliographyReference"], "nameOfAuthor", array()), "html", null, true);
+                echo ", ";
+                echo twig_escape_filter($this->env, $this->getAttribute($context["bibliographyReference"], "titleOfReference", array()), "html", null, true);
+                echo ", ";
+                echo twig_escape_filter($this->env, $this->getAttribute($context["bibliographyReference"], "yearPublished", array()), "html", null, true);
                 echo "
                         </a>
                     </li>
@@ -152,10 +156,10 @@ $context["bibliographyReference"], "id", array()))), "html", null, true);
 </section>
 ";
         
-        $__internal_7f7adfea83671fe844f823f716f2ad1a664c5035faa480fc461f2a8ff2c037dd->leave($__internal_7f7adfea83671fe844f823f716f2ad1a664c5035faa480fc461f2a8ff2c037dd_prof);
+        $__internal_1744b941f0b30260514f283c60fc8b5aa1d7f3a10681c78e706be927f2d5430c->leave($__internal_1744b941f0b30260514f283c60fc8b5aa1d7f3a10681c78e706be927f2d5430c_prof);
 
         
-        $__internal_65969ecf2a3b04eb963e948737889890e2e8ff450651332454da0eed4af2c15c->leave($__internal_65969ecf2a3b04eb963e948737889890e2e8ff450651332454da0eed4af2c15c_prof);
+        $__internal_27b625c0ad92dc61103c70495697e7d53e876e1c7fa25cd4c3d674d459d7afe6->leave($__internal_27b625c0ad92dc61103c70495697e7d53e876e1c7fa25cd4c3d674d459d7afe6_prof);
 
     }
 
@@ -171,7 +175,7 @@ $context["bibliographyReference"], "id", array()))), "html", null, true);
 
     public function getDebugInfo()
     {
-        return array (  150 => 55,  144 => 52,  141 => 51,  139 => 50,  134 => 48,  129 => 45,  123 => 41,  113 => 38,  110 => 37,  108 => 36,  107 => 35,  104 => 34,  100 => 33,  93 => 30,  91 => 29,  85 => 26,  78 => 22,  71 => 18,  64 => 14,  57 => 10,  49 => 4,  40 => 3,  11 => 1,);
+        return array (  154 => 55,  148 => 52,  145 => 51,  143 => 50,  138 => 48,  133 => 45,  127 => 41,  113 => 38,  110 => 37,  108 => 36,  107 => 35,  104 => 34,  100 => 33,  93 => 30,  91 => 29,  85 => 26,  78 => 22,  71 => 18,  64 => 14,  57 => 10,  49 => 4,  40 => 3,  11 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -221,7 +225,7 @@ $context["bibliographyReference"], "id", array()))), "html", null, true);
                         <a href=\"{{ path('reference_show', {
                             'id': bibliographyReference.id
                         }) }}\">
-                            {{ bibliographyReference.nameOfAuthor }}
+                            {{ bibliographyReference.nameOfAuthor }}, {{ bibliographyReference.titleOfReference }}, {{ bibliographyReference.yearPublished }}
                         </a>
                     </li>
                 {% endfor %}</td>

@@ -35,7 +35,7 @@
                         <a href="{{ path('reference_show', {
                             'id': bibliographyReference.id
                         }) }}">
-                            {{ bibliographyReference.nameOfAuthor }}
+                            {{ bibliographyReference.nameOfAuthor }}, {{ bibliographyReference.titleOfReference }}, {{ bibliographyReference.yearPublished }}
                         </a>
                     </li>
                 {% endfor %}</td>

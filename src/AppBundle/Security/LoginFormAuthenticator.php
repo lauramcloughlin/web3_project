@@ -27,6 +27,7 @@ class LoginFormAuthenticator extends AbstractFormLoginAuthenticator
         $this->router = $router;
         $this->passwordEncoder = $passwordEncoder;
     }
+
     public function getCredentials(Request $request)
     {
         $isLoginSubmit = $request->getPathInfo() == '/login' && $request->isMethod('POST');
